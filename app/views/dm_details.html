@@ -1,0 +1,246 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "search"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Enter details for your Delivery Managers
+      </h1>
+
+      <div class="govuk-form-group">
+
+        <label class="govuk-label govuk-label--m" for="email-address">
+          Delivery manager email address
+        </label>
+        <span id="email-hint" class="govuk-hint">
+          We’ll use this to send them a notification that the SOC is ready for their action
+        </span>
+        <input class="govuk-input" id="email-address" name="email-address" type="email" aria-describedby="email-hint" autocomplete="email" spellcheck="false">
+
+        <div class="govuk-!-padding-bottom-8"></div>
+
+        <form>
+          <fieldset class="govuk-fieldset" aria-describedby="dm-soc-responsibility">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              Which areas of the SOC is the Delivery manager responsible for?
+            </legend>
+            <span id="dm-soc-hint" class="govuk-hint">
+              Select all that apply
+            </span>
+            <div class="multiple-choice--hod govuk-checkboxes" data-module="checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-1" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-1">
+                  Crown Court
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-2" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-2">
+                  Magitrates Court
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-4" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-4">
+                  Civil
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-5" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-5">
+                  Family
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Tribunals - SSCS
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Tribunals - ET
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Tribunals - IAC
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Tribunals - MH
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Tribunals - Specials
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Criminal Injuries Compensation
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Court of Protection
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Maintenance Enforcement
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Regional Enforcement Teams (inc. FPO)
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Regional Support Units
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  RCJ - Criminal Appeals
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  RCJ - Civil Appeals
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  RCJ - Queens Bench
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  RCJ - Rolls Building
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Direct Lodgements Centre
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Confiscation Unit
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Jury Summoning Bureau
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Divorce
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  County Court Business Centre
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  ASC Loughborough Support Centre
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  SEND Darlington
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Probate
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  IAC Leicester
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  County Court Money Claims Centre
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Wales
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+
+
+<div class="block-space">
+  <a class="govuk-button" href="confirm_details" role="button">
+    Continue
+  </a>
+
+
+	<a class="govuk-button button-secondary" href="dm_details_add_another" type="submit" tabindex="0" style="padding-bottom: 10px;margin-left: 15px" 15px>
+		Add another Delivery Manager
+	</a>
+</div>
+
+
+</div>
+
+{% endblock %}

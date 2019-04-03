@@ -1,0 +1,61 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "confirm_details"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+      <div class="govuk-width-container">
+        <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="padding-top: 0px">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div class="govuk-panel govuk-panel--confirmation">
+                <h1 class="govuk-panel__title">
+                  SOC set up complete
+                </h1>
+                <div class="govuk-panel__body">
+                  The SOC for your operational area has been sent to your Delivery Manager(s) for completion.
+                </div>
+              </div>
+
+              <div class="govuk-!-padding-bottom-4"></div>
+              <p class="govuk-body">We have sent you a confirmation email.</p>
+
+              <h2 class="govuk-heading-m">What happens next</h2>
+
+              <p class="govuk-body">
+                We’ve sent your Delivery Manager(s) an email to notify them that the SOC is set up and waiting for their action.
+              </p>
+              <p class="govuk-body">
+                You can check the SOC for updates by (TBC).
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+
+
+  <a class="govuk-button" href="#" role="button">
+    Close
+  </a>
+
+
+</div>
+
+{% endblock %}

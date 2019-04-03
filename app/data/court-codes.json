@@ -1,0 +1,28 @@
+[
+    {
+        "regionid": 1,
+        "region": "North West",
+        "clusterlevelid": 1,
+        "clusterlevel": "Greater Manchester Crime",
+        "subclusterlevelid": 1,
+        "subclusterlevel": "Manchester Magistrates - Central",
+        "courtid": 1,
+        "court": "Manchester Magistrates Court",
+        "courtcodeid": 1,
+        "courtcode": "MMC12",
+      },
+
+      {
+          "regionid": 1,
+          "region": "North West",
+          "clusterlevelid": 1,
+          "clusterlevel": "Greater Manchester Crime",
+          "subclusterlevelid": 2,
+          "subclusterlevel": "Manchester - Crown Square",
+          "courtid": 2,
+          "court": "Manchester Crown Court (Crown Square)",
+          "courtcodeid": 2,
+          "courtcode": "MMCC1",
+        }
+
+]

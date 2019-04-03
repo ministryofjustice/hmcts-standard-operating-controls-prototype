@@ -1,0 +1,137 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "dm_details"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Check your answers before submitting the SOC to your Delivery Managers for action
+      </h1>
+
+      <h2 class="govuk-heading-m">Operational area details</h2>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Operational Manager email address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              john.doe@example.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change
+                <span class="govuk-visually-hidden"> operational manager email</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Court
+            </dt>
+            <dd class="govuk-summary-list__value">
+              490: Manchester - Crown Square
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change
+                <span class="govuk-visually-hidden"> court code</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+        <h2 class="govuk-heading-m">First Delivery Manager details</h2>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Delivery Manager email address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                joe.bloggs@example.com
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change
+                  <span class="govuk-visually-hidden"> first delivery manager email</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Areas of SOC responsibility
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Crown Court, Family
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change
+                  <span class="govuk-visually-hidden"> court code</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <h2 class="govuk-heading-m">Second Delivery Manager details</h2>
+
+            <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Delivery Manager email address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  jane.roe@example.com
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change
+                    <span class="govuk-visually-hidden"> second delivery manager email</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Areas of SOC responsibility
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Magistrates Court, Magistrates Court (Legal), Civil
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="#">
+                    Change
+                    <span class="govuk-visually-hidden"> court code</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+
+
+  <a class="govuk-button" href="confirmation_submitted" role="button">
+    Confirm and submit
+  </a>
+
+
+</div>
+
+{% endblock %}

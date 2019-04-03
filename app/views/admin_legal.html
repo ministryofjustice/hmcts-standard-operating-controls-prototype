@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "om_email"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="/form-handler" method="post" novalidate>
+
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                      <h1 class="govuk-fieldset__heading" style="padding-bottom: 10px;">
+                        What type of SOC are you setting up?
+                      </h1>
+                    </legend>
+                    <div class="govuk-!-padding-bottom-4"></div>
+                    <div class="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="soc-type-1" name="soc-type" type="radio" value="admim">
+                        <label class="govuk-label govuk-radios__label" for="soc-type-1">
+                          Admin
+                        </label>
+                      </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="soc-type-2" name="soc-type" type="radio" value="legal">
+                        <label class="govuk-label govuk-radios__label" for="soc-type-2">
+                          Legal
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <a class="govuk-button" href="search" role="button">
+                  Continue
+                </a>
+  </div>
+
+{% endblock %}

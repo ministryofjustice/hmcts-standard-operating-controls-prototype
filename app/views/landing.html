@@ -1,0 +1,40 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+{% endblock %}
+
+
+{% block pageScripts %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        SOC Entry tool prototype library
+      </h1>
+
+      <h3 class="govuk-heading-m">Scenario #1: Operational manager with one court and two Delivery managers</h3>
+      <p class="govuk-body">On the search page, search for '490: Manchester - Crown Square.'</p>
+      <a href="om_email" class="govuk-link">Go to prototype for scenario #1</a>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    </div>
+
+
+  </div>
+
+
+{% endblock %}

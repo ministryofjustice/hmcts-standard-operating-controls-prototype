@@ -1,0 +1,119 @@
+{
+  "Sheet1": [
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "1",
+      "court": "Blackfriars Crown Court (Sub Cluster)"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "2",
+      "court": "Central Criminal Court (Sub Cluster)"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "3",
+      "court": "Croydon Combined Court"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "4",
+      "court": "Harrow"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "5",
+      "court": "Inner London Crown Court"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "6",
+      "court": "isleworth"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "7",
+      "court": "Kingston"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "8",
+      "court": "Snaresbrook"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "9",
+      "court": "Southwark"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "10",
+      "court": "Wood Green"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "11",
+      "court": "Woolwich"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "12",
+      "court": "Crown Courts London"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "13",
+      "court": [
+        "ILFPC",
+        "NLFPC",
+        "WLFPC",
+        "ELFPC",
+        "SLFPC"
+      ]
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "14",
+      "court": "Training & Advisory (Sub Cluster)"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "15",
+      "court": "London Legal Family"
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "16",
+      "court": [
+        "CFC",
+        "WFC",
+        "EFC",
+        "BHC",
+        "S/SEHC",
+        "MEBC"
+      ]
+    },
+    {
+      "type_id": "1",
+      "type": "Central tribunals",
+      "court_id": "17",
+      "court": "London Legal Family (Magistrates)"
+    }
+  ]
+}
