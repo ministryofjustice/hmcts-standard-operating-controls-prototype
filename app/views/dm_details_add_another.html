@@ -1,4 +1,5 @@
 
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -20,8 +21,9 @@
 {% endblock %}
 
 {% block content %}
-
+<form method="post" action="/dm-email-address-2">
   <div class="govuk-grid-row">
+
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
         Enter details for your Delivery Managers
@@ -35,11 +37,11 @@
         <span id="email-hint" class="govuk-hint">
           We’ll use this to send them a notification that the SOC is ready for their action
         </span>
-        <input class="govuk-input" id="email-address" name="email-address" type="email" aria-describedby="email-hint" autocomplete="email" spellcheck="false">
+        <input class="govuk-input" id="email-address" name="dm-email-address-2" type="text" aria-describedby="email-hint" value="{{ data['dm-email-address-2'] }}">
 
         <div class="govuk-!-padding-bottom-8"></div>
 
-        <form>
+
           <fieldset class="govuk-fieldset" aria-describedby="dm-soc-responsibility">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
               Which areas of the SOC is the Delivery manager responsible for?
@@ -138,26 +140,26 @@
                   Regional Support Units
                 </label>
               </div>
+
             </div>
           </fieldset>
-        </form>
+
 
       </div>
 
 
 <div class="block-space">
-  <a class="govuk-button" href="confirm_details" role="button">
+  <button class="govuk-button" type="submit">
     Continue
-  </a>
+  </button>
 
-
-  <a class="govuk-button hmcts-button--secondary" href="dm_details_add_another" type="submit" tabindex="0" style="padding-bottom: 10px;margin-left: 15px" 15px>
-    Add another Delivery Manager
-  </a>
-
-</div>
-
+	<a class="govuk-button hmcts-button--secondary" href="dm_details_add_another" type="submit" tabindex="0" style="padding-bottom: 10px;margin-left: 15px" 15px>
+		Add another Delivery Manager
+	</a>
 
 </div>
 
+
+</div>
+</form>
 {% endblock %}

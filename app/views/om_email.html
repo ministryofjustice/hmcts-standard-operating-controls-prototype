@@ -19,7 +19,7 @@
 {% endblock %}
 
 {% block content %}
-
+<form method="post" action="/om-email-address">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
@@ -41,9 +41,10 @@
 
   </div>
 
-  <a class="govuk-button" href="admin_legal" role="button">
+  <button class="govuk-button" type="submit">
     Continue
-  </a>
+  </button>
+</form>
 
 
 {% endblock %}

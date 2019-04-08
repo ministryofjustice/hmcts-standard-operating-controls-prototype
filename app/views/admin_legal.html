@@ -20,7 +20,7 @@
 
 {% block content %}
 
-
+<form method="post" action="/soc-type">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <form action="/form-handler" method="post" novalidate>
@@ -49,9 +49,11 @@
                     </div>
                   </fieldset>
                 </div>
-                <a class="govuk-button" href="search" role="button">
+
+                <button class="govuk-button" type="submit">
                   Continue
-                </a>
+                </button>
   </div>
+</form>
 
 {% endblock %}
