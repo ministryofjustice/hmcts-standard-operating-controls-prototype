@@ -25,7 +25,7 @@ $('#search').hideseek({
     html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
   }) }}
 
-  
+
 {% endblock %}
 
 {% block content %}
@@ -33,8 +33,12 @@ $('#search').hideseek({
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">Which court are you responsible for?</h1>
+        <p class="govuk-body">Once you've told us about one court, you can tell us about other courts in your operational area. </p>
       </div>
     </div>
+<hr class="govuk-section-break govuk-section-break--m govuk-!-width-two-thirds govuk-section-break--visible">
+<!--
+<div class="govuk-!-padding-bottom-6"></div> -->
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -60,7 +64,7 @@ $('#search').hideseek({
     <div id="search-field" class="govuk-form-group">
 
       <label class="govuk-heading-m" for="search">
-        Search by Court location code to add another
+        Search by Court location code
           <span class="govuk-hint">
             For example, 428. Or search by court, tribunal or unit name
           </span>
