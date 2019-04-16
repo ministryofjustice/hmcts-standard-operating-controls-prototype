@@ -23,6 +23,12 @@ console.log(req.session.data)
 res.redirect('/admin_legal')
 })
 
+router.post('/admin_legal', function (req, res) {
+Object.assign(req.session.data,req.body)
+console.log(req.session.data)
+res.redirect('/search')
+})
+
 router.post('/dm-email-address-1', function (req, res) {
 Object.assign(req.session.data,req.body)
 console.log(req.session.data)
