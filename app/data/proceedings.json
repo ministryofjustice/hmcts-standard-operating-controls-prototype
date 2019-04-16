@@ -25,33 +25,33 @@
     },
     {
         "categoryoflawid": 1,
-        "categoryoflaw": "London",
+        "categoryoflaw": "",
         "mattertypeid": 1,
-        "mattertype": "",
+        "mattertype": "London",
         "proceedingtypeid": 1,
         "proceedingtype": "418 - Croydon Crown "
     },
     {
         "categoryoflawid": 1,
-        "categoryoflaw": "London",
+        "categoryoflaw": "",
         "mattertypeid": 1,
-        "mattertype": "",
+        "mattertype": "London",
         "proceedingtypeid": 2,
         "proceedingtype": "182 - Croydon County "
     },
     {
         "categoryoflawid": 1,
-        "categoryoflaw": "London",
+        "categoryoflaw": "",
         "mattertypeid": 1,
-        "mattertype": "",
+        "mattertype": "London",
         "proceedingtypeid": 3,
         "proceedingtype": "972 - Croydon ET "
     },
     {
         "categoryoflawid": 1,
-        "categoryoflaw": "London",
+        "categoryoflaw": "",
         "mattertypeid": 1,
-        "mattertype": "",
+        "mattertype": "London",
         "proceedingtypeid": 4,
         "proceedingtype": "10111 - Croydon Magistrates "
     }
