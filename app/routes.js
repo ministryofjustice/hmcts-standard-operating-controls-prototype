@@ -12,6 +12,34 @@ router.get('/search', function (req, res) {
 
 })
 
+router.get('/search_select', function (req, res) {
+
+
+  res.render('search_select',
+    {
+      proceedings: utils.getProceedings()
+    })
+
+})
+
+router.get('/search_w_codes', function (req, res) {
+
+res.render('search',
+  {
+    proceedings: utils.getProceedings()
+  })
+
+})
+
+router.get('/search_select_w_codes', function (req, res) {
+
+res.render('search_select',
+  {
+    proceedings: utils.getProceedings()
+  })
+
+})
+
 router.get('/', (req, res) => {
   res.redirect('/landing')
 })
@@ -46,5 +74,6 @@ Object.assign(req.session.data,req.body)
 console.log(req.session.data)
 res.redirect('/search')
 })
+
 
 module.exports = router

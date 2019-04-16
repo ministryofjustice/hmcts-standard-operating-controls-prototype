@@ -47,9 +47,8 @@ $('#search_select').hideseek({
         <h2 class="govuk-heading-m">You have selected 1 court</h2>
         <tbody class="govuk-table__body">
           <tr class="govuk-table__row">
-            <th class="govuk-table__cell govuk-body" scope="row"><h3 class="govuk-body proceeding-item"><strong>Manchester - Crown Square</strong></h3>
-            <li class="govuk-caption-m proceeding__list-item">North West</li>
-            <li class="govuk-caption-m proceeding__list-item"> > Greater Manchester Crime</li></th>
+            <th class="govuk-table__cell govuk-body" scope="row"><h3 class="govuk-body proceeding-item"><strong>482: Croydon - Crown Square</strong></h3>
+            <li class="govuk-caption-m proceeding__list-item">London</li>
                 <td class="govuk-table__cell govuk-table__cell--numeric"><a href="search">
                   Remove <span class="govuk-visually-hidden">blank</span>
                 </a></td>
@@ -63,10 +62,10 @@ $('#search_select').hideseek({
 
     <div id="search-field" class="govuk-form-group">
 
-      <label class="govuk-heading-m" for="search">
-        Search by court, tribunal or unit name
+      <label class="govuk-heading-m" for="search_select">
+        Search by Court location code
           <span class="govuk-hint">
-            For example, Derby Crown
+            For example, 430. Or search by court, tribunal or unit name
           </span>
       </label>
 
@@ -92,7 +91,7 @@ $('#search_select').hideseek({
             </div>
 
             <div class="govuk-grid-column-one-third" style="text-align:right; padding-top: 25px;">
-                <a id="offence-item-button-{{loop.index}}" class="govuk-button" role="button" href="search_select_2">
+                <a id="offence-item-button-{{loop.index}}" class="govuk-button" role="button" href="test_scenario_2/search_select_2_w_codes">
                     Select
                 </a>
             </div>
@@ -105,7 +104,7 @@ $('#search_select').hideseek({
 </div>
 
 
-<a class="govuk-button" href="dm_details" role="button">
+<a class="govuk-button" href="search_select_2_w_codes" role="button">
   Continue
 </a>
 

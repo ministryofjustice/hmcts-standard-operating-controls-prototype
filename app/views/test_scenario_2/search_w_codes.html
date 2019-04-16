@@ -20,7 +20,7 @@
 {% block pageScripts %}
 <script src="/public/javascripts/jquery.hideseek.min.js"></script>
 <script>
-$('#search').hideseek({
+$('#search_w_codes').hideseek({
     highlight: true,
     min_chars: 3,
     nodata: "No results found.",
@@ -44,9 +44,9 @@ $('#search').hideseek({
       <div id="search-field" class="govuk-form-group">
 
         <label class="govuk-heading-m" for="search">
-          Search by court, tribunal or unit name
+          Search by Court location code
             <span class="govuk-hint">
-              For example, Derby Crown
+              For example, 430. Or search by court, tribunal or unit name
             </span>
         </label>
 
@@ -64,7 +64,7 @@ $('#search').hideseek({
 
                 <div class="govuk-grid-column-two-thirds">
 
-                    <ul class="proceeding-list">
+                    <ul class="proceeding-list-w-codes">
                       <h3 class="govuk-body proceeding-item">{{proceeding.proceedingtype | capitalize}}</h3>
                       <li class="govuk-caption-m proceeding__list-item">{{proceeding.categoryoflaw| capitalize}}</li>
                       <li class="govuk-caption-m proceeding__list-item"> > {{proceeding.mattertype | capitalize}}</li>
@@ -72,7 +72,7 @@ $('#search').hideseek({
                 </div>
 
                 <div class="govuk-grid-column-one-third" style="text-align:right; padding-top: 25px;">
-                    <a id="offence-item-button-{{loop.index}}" class="govuk-button" role="button" href="search_select">
+                    <a id="offence-item-button-{{loop.index}}" class="govuk-button" role="button" href="/test_scenario_2/search_select_w_codes">
                         Select
                     </a>
                 </div>
@@ -88,9 +88,10 @@ $('#search').hideseek({
 
 
 
-  <a class="govuk-button" href="dm_details" role="button">
+  <a class="govuk-button" href="search_select_w_codes" role="button">
     Continue
   </a>
+
     </div>
 </div>
 

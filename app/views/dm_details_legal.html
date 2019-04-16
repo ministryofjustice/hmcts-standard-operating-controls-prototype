@@ -1,0 +1,79 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "search_select"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<form method="post" action="/dm-email-address-1">
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Tell us about who will be completing the SOC report
+      </h1>
+
+      <div class="govuk-form-group">
+
+        <label class="govuk-label govuk-label--m" for="email-address">
+          Delivery manager or Legal Team Member email address
+        </label>
+        <span id="email-hint" class="govuk-hint">
+          We’ll use this to send them a notification that the SOC is ready for their action
+        </span>
+        <input class="govuk-input" id="email-address-1" name="dm-email-address-1" type="text" aria-describedby="email-hint" value="{{ data['dm-email-address-1'] }}">
+
+        <div class="govuk-!-padding-bottom-8"></div>
+
+          <fieldset class="govuk-fieldset" aria-describedby="dm-soc-responsibility">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              Which areas of the SOC are they responsible for?
+            </legend>
+            <span id="dm-soc-hint" class="govuk-hint">
+              Select all that apply
+            </span>
+            <div class="multiple-choice--hod govuk-checkboxes" data-module="checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-legal-1" name="ident-doc" type="checkbox" value="email" data-aria-controls="responsibility-conditional-legal-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-legal-1">
+                  Magistrates Court (Legal)
+                </label>
+              </div>
+            </div>
+          </div>
+
+            </div>
+          </fieldset>
+      </div>
+
+<div class="block-space">
+  <button class="govuk-button" type="submit">
+    Continue
+  </button>
+
+  <button class="govuk-button hmcts-button--secondary" type="submit" formaction="dm_details_add_another_legal" tabindex="0" style="padding-bottom: 10px;margin-left: 15px" 15px>
+    Add another person
+  </button>
+
+
+</div>
+
+
+</div>
+</form>
+{% endblock %}

@@ -5,7 +5,7 @@
         "mattertypeid": 3,
         "mattertype": "Greater Manchester Crime",
         "proceedingtypeid": 1,
-        "proceedingtype": "490: Manchester - Crown Square"
+        "proceedingtype": "Manchester - Crown Square"
     },
     {
         "categoryoflawid": 2,
@@ -13,7 +13,7 @@
         "mattertypeid": 3,
         "mattertype": "Greater Manchester Crime",
         "proceedingtypeid": 2,
-        "proceedingtype": "491: Manchester - Minshull Street / Bolton Crown"
+        "proceedingtype": "Manchester - Minshull Street / Bolton Crown"
     },
     {
         "categoryoflawid": 2,
@@ -21,6 +21,38 @@
         "mattertypeid": 4,
         "mattertype": "Manchester Magistrates - Central",
         "proceedingtypeid": 1,
-        "proceedingtype": "495: Manchester Magistrates Court"
+        "proceedingtype": "Manchester Magistrates Court"
+    },
+    {
+        "categoryoflawid": 1,
+        "categoryoflaw": "London",
+        "mattertypeid": 1,
+        "mattertype": "",
+        "proceedingtypeid": 1,
+        "proceedingtype": "418 - Croydon Crown "
+    },
+    {
+        "categoryoflawid": 1,
+        "categoryoflaw": "London",
+        "mattertypeid": 1,
+        "mattertype": "",
+        "proceedingtypeid": 2,
+        "proceedingtype": "182 - Croydon County "
+    },
+    {
+        "categoryoflawid": 1,
+        "categoryoflaw": "London",
+        "mattertypeid": 1,
+        "mattertype": "",
+        "proceedingtypeid": 3,
+        "proceedingtype": "972 - Croydon ET "
+    },
+    {
+        "categoryoflawid": 1,
+        "categoryoflaw": "London",
+        "mattertypeid": 1,
+        "mattertype": "",
+        "proceedingtypeid": 4,
+        "proceedingtype": "10111 - Croydon Magistrates "
     }
 ]
