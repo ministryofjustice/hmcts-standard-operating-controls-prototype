@@ -1,0 +1,144 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Choose a SOC to set up</h1>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <span class="govuk-caption-m">Q3 2019</span>
+          <h2 class="govuk-heading-m">Manchester - Crown Square</h2>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <button type="submit" href="dm_details" class="govuk-button">
+            Set up SOC
+          </button>
+          <button type="submit" class="govuk-button hmcts-button--secondary">
+            Remove court
+          </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- <div class="govuk-!-padding-bottom-4"></div>
+
+
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <table class="govuk-table" style="width: 600px">
+            <caption class="govuk-table__caption">This SOC is assigned to</caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header"  scope="col">Email address</th>
+                <th class="govuk-table__header" scope="col">Areas of SOC they are responsible for</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">sarah.smith@email.com{{ data['dm-email-address-1'] }}</td>
+                <td class="govuk-table__cell">Civil, Family</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> -->
+
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-!-width-full-width govuk-section-break--visible">
+
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <span class="govuk-caption-m">Q3 2019</span>
+              <h2 class="govuk-heading-m">Manchester - Magistrates court</h2>
+            </div>
+            <div class="govuk-grid-column-one-half">
+              <button type="submit" class="govuk-button">
+                Set up SOC
+              </button>
+              <button type="submit" class="govuk-button hmcts-button--secondary">
+                Remove court
+              </button>
+              </a>
+            </div>
+          </div>
+
+<!--
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <table class="govuk-table" style="width: 600px">
+            <caption class="govuk-table__caption">Assigned to</caption>
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header"  scope="col">Email address</th>
+                <th class="govuk-table__header" scope="col">Areas of SOC responsible for</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+ -->
+
+
+
+
+
+<!--
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width: 30px">
+              Q3 2019
+            </dt>
+            <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 200px">
+                Manchester - Crown Square
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width: 70px">
+              <button type="submit" class="govuk-button hmcts-button--secondary">
+                Assign people to this SOC
+              </button>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width: 30px">
+              Q3 2019
+            </dt>
+            <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 200px">
+                Manchester - Magistrates
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width: 70px">
+              <button type="submit" class="govuk-button hmcts-button--secondary">
+                Assign people to this SOC
+              </button>
+            </dd>
+          </div>
+        </dl> -->
+
+
+</div>
+
+{% endblock %}
