@@ -75,11 +75,5 @@ console.log(req.session.data)
 res.redirect('/search')
 })
 
-outer.post('/soc_responsibilities', function (req, res) {
-Object.assign(req.session.data,req.body)
-console.log(req.session.data)
-res.redirect('/task_list')
-})
-
 
 module.exports = router

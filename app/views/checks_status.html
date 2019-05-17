@@ -1,0 +1,167 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "task_list"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Have all key control checks been completed?
+      </h1>
+    </legend>
+    <span id="how-contacted-conditional-hint" class="govuk-hint">
+      Select one option.
+    </span>
+    <div class="govuk-radios govuk-radios--inline--conditional" data-module="radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+          Yes
+        </label> </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+          No
+        </label> </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+        <div class="govuk-form-group">
+          <p><strong>Select the activities below where you have not completed any control checks this quarter</strong></p>
+          <div class="multiple-choice--hod govuk-checkboxes" data-module="checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-1" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-1">
+                Magistrates Court Resulting SOP
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-2" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-2">
+                Custody Time Limits
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-2" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-2">
+                Documents to PECS
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-4" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-4">
+                Information Security
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-5" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-5">
+                Anti Money Laundering
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                Business Continuity
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                Business Continuity
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                Effectively Managing Fraud
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                Financial Stationary
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                Agency Staff
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                TFM Contracts
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                Magistrates Case Process
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                Management of Keys
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-one-third">
+ <aside class="app-related-items" role="complementary">
+           <nav role="navigation" aria-labelledby="subsection-title">
+             <ul class="govuk-list govuk-!-font-size-16">
+               <li>
+                 <span class="govuk-caption-m">Q3 2019</span>
+               </li>
+               <li>
+                 <h2 class="govuk-heading-s">Manchester - Crown Square</h2>
+               </li>
+             </ul>
+           </nav>
+         </aside>
+       </div>
+     </div>
+
+     <div class="block-space">
+       <button class="govuk-button" type="submit">
+         Save and return
+       </button>
+
+
+
+{% endblock %}
