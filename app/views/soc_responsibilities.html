@@ -1,0 +1,149 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "task_list"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<form method="post" action="/dm-email-address-1">
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Tell us about any SOC tasks you are not responsible for
+      </h1>
+
+      <p>Your Operational Manager/ Deputy Justice Clerk has told us about the jurisdictions you are responsible for at <strong>Manchester Magistrates Court</strong>.</p>
+    </br>
+    <p><strong>Check the boxes to tell us about the SOC responsibilities you are not responsible for checking.</strong></p>
+
+      <div class="govuk-form-group">
+
+            </legend>
+            <span id="dm-soc-hint" class="govuk-hint">
+              Select all that apply
+            </span>
+            <div class="multiple-choice--hod govuk-checkboxes" data-module="checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-1" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-1">
+                  Magistrates Court Resulting SOP
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-2" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-2">
+                  Custody Time Limits
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-2" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-2">
+                  Documents to PECS
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-4" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-4">
+                  Information Security
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-5" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-5">
+                  Anti Money Laundering
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Business Continuity
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Business Continuity
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Effectively Managing Fraud
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Financial Stationary
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Agency Staff
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  TFM Contracts
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Magistrates Case Process
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                  Management of Keys
+                </label>
+              </div>
+            </div>
+          </fieldset>
+      </div>
+
+<div class="block-space">
+  <button class="govuk-button" type="submit">
+    Save and return
+  </button>
+
+</div>
+
+</div>
+</div>
+</form>
+
+<div class="govuk-grid-column-one-third">
+ <aside class="app-related-items" role="complementary">
+           <nav role="navigation" aria-labelledby="subsection-title">
+             <ul class="govuk-list govuk-!-font-size-16">
+               <li>
+                 <span class="govuk-caption-m">Q3 2019</span>
+               </li>
+               <li>
+                 <h2 class="govuk-heading-s">Manchester - Crown Square</h2>
+               </li>
+             </ul>
+           </nav>
+         </aside>
+       </div>
+{% endblock %}
