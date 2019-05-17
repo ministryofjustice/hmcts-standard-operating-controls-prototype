@@ -1,0 +1,126 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        My SOC tasks
+      </h1>
+
+      <p>Complete the steps below to complete the SOC report for the quarter.</p>
+        <br>
+      <p>You can go back and change your answers at any time before submitting your report.</p>
+      <hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+      <div class="govuk-!-padding-bottom-6"></div>
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+       <aside class="app-related-items" role="complementary">
+                 <nav role="navigation" aria-labelledby="subsection-title">
+                   <ul class="govuk-list govuk-!-font-size-16">
+                     <li>
+                       <span class="govuk-caption-m">Q3 2019</span>
+                     </li>
+                     <li>
+                       <h2 class="govuk-heading-s">Manchester - Crown Square</h2>
+                     </li>
+                   </ul>
+                 </nav>
+               </aside>
+             </div>
+           </div>
+
+
+      <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+      <h2 class="govuk-heading-m" href="#">Confirm which SOC activities you are responsible for</h2>
+    </div>
+    <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-quarter">
+      <strong class="govuk-tag">
+        Done
+      </strong>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            What this section is for
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Use this section to:
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Tell us about SOC activities you are not responsible for</li>
+            <li>Find out more information about the checks you are responsible for in this quarter</li>
+          </ul>
+          You can update your responsibilities at any time before submitting your report.
+        </div>
+      </details>
+        <hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+        <div class="govuk-!-padding-bottom-6"></div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-m" href="#">Tell us about the status of key control checks</h2>
+  </div>
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <strong class="govuk-tag">
+      Done
+    </strong>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          What this section is for
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        Use this section to:
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Tell us about SOC activities you are not responsible for</li>
+          <li>Find out more information about the checks you are responsible for in this quarter</li>
+        </ul>
+        You can update your responsibilities at any time before submitting your report.
+      </div>
+    </details>
+      <hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
+    </div>
+  </div>
+
+
+
+
+    <div class="govuk-grid-column-two-thirds">
+  <a class="govuk-button" href="#" role="button">
+    Save and return to home
+  </a>
+
+
+</div>
+
+{% endblock %}
