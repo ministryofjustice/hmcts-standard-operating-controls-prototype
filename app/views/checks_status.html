@@ -27,118 +27,515 @@
 
 
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="responsibility-conditional-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
       <h1 class="govuk-fieldset__heading">
         Have all key control checks been completed?
       </h1>
     </legend>
-    <span id="how-contacted-conditional-hint" class="govuk-hint">
+    <span id="responsibility-conditional-hint" class="govuk-hint">
       Select one option.
     </span>
     <div class="govuk-radios govuk-radios--inline--conditional" data-module="radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
-        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+        <input class="govuk-radios__input" id="responsibility-conditional-1" name="responsibility" type="radio" value="yes" data-aria-controls="conditional-responsibility-conditional-1">
+        <label class="govuk-label govuk-radios__label" for="responsibility-conditional-1">
           Yes
         </label> </div>
 
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+        <input class="govuk-radios__input" id="responsibility-conditional-2" name="responsibility" type="radio" value="no" data-aria-controls="conditional-responsibility-conditional-2">
+        <label class="govuk-label govuk-radios__label" for="responsibility-conditional-2">
           No
         </label> </div>
-      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
-        <div class="govuk-form-group">
-          <p><strong>Select the activities below where you have not completed any control checks this quarter</strong></p>
-          <div class="multiple-choice--hod govuk-checkboxes" data-module="checkboxes">
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-1" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-1">
-                Magistrates Court Resulting SOP
-              </label>
+
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-responsibility-conditional-2">
+          <div class="govuk-form-group">
+            <p><strong>Select the activities below where you have not completed any control checks this quarter</strong></p>
+            <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="responsibility-conditional-hint">
+              <span id="responsibility-conditional-hint" class="govuk-hint">
+                Select all options that are relevant to you.
+              </span>
+
+              <div class="multiple-choice--hod govuk-checkboxes" data-module="checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="responsibility-conditional-2" name="activity" type="checkbox" value="mag court resulting" data-aria-controls="conditional-responsibility-conditional-2">
+                  <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-2">
+                    Magistrates Court Resulting SOP
+                  </label> </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-2">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h1 class="govuk-fieldset__heading">
+                          Why were key control checks not completed against this activity?
+                        </h1>
+                      </legend>
+                      <span id="responsibility-conditional-hint" class="govuk-hint">
+                        Select one option.
+                      </span>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                            Capacity
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                            Knowledge and capability
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                            No activity this quarter
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                            Key control checks not in place - new activity this quarter
+                          </label> </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="responsibility-conditional-3" name="activity" type="checkbox" value="custody time limits" data-aria-controls="conditional-responsibility-conditional-3">
+                  <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-3">
+                    Custody Time Limits
+                  </label> </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-3">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h1 class="govuk-fieldset__heading">
+                          Why were key control checks not completed against this activity?
+                        </h1>
+                      </legend>
+                      <span id="responsibility-conditional-hint" class="govuk-hint">
+                        Select one option.
+                      </span>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                            Capacity
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                            Knowledge and capability
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                            No activity this quarter
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                            Key control checks not in place - new activity this quarter
+                          </label> </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="responsibility-conditional-4" name="activity" type="checkbox" value="docs to pecs" data-aria-controls="conditional-responsibility-conditional-4">
+                  <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-4">
+                    Documents to PECS
+                  </label> </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-4">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h1 class="govuk-fieldset__heading">
+                          Why were key control checks not completed against this activity?
+                        </h1>
+                      </legend>
+                      <span id="responsibility-conditional-hint" class="govuk-hint">
+                        Select one option.
+                      </span>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                            Capacity
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                            Knowledge and capability
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                            No activity this quarter
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                            Key control checks not in place - new activity this quarter
+                          </label> </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="responsibility-conditional-5" name="activity" type="checkbox" value="info security" data-aria-controls="conditional-responsibility-conditional-5">
+                    <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-5">
+                      Information Security
+                    </label> </div>
+                  <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-5">
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                          <h1 class="govuk-fieldset__heading">
+                            Why were key control checks not completed against this activity?
+                          </h1>
+                        </legend>
+                        <span id="responsibility-conditional-hint" class="govuk-hint">
+                          Select one option.
+                        </span>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                            <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                              Capacity
+                            </label> </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                            <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                              Knowledge and capability
+                            </label> </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                            <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                              No activity this quarter
+                            </label> </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                            <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                              Key control checks not in place - new activity this quarter
+                            </label> </div>
+                        </div>
+                      </fieldset>
+                    </div>
+
+                </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="responsibility-conditional-6" name="activity" type="checkbox" value="anti money laundering" data-aria-controls="conditional-responsibility-conditional-6">
+                  <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+                    Anti Money Laundering
+                  </label> </div>
+                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-6">
+                  <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h1 class="govuk-fieldset__heading">
+                          Why were key control checks not completed against this activity?
+                        </h1>
+                      </legend>
+                      <span id="responsibility-conditional-hint" class="govuk-hint">
+                        Select one option.
+                      </span>
+                      <div class="govuk-radios">
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                            Capacity
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                            Knowledge and capability
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                            No activity this quarter
+                          </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                          <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                            Key control checks not in place - new activity this quarter
+                          </label> </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
+              </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="responsibility-conditional-7" name="activity" type="checkbox" value="bus continuity" data-aria-controls="conditional-responsibility-conditional-7">
+                <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-7">
+                  Business Continuity
+                </label> </div>
+              <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-7">
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                      <h1 class="govuk-fieldset__heading">
+                        Why were key control checks not completed against this activity?
+                      </h1>
+                    </legend>
+                    <span id="responsibility-conditional-hint" class="govuk-hint">
+                      Select one option.
+                    </span>
+                    <div class="govuk-radios">
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                        <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                          Capacity
+                        </label> </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                        <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                          Knowledge and capability
+                        </label> </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                        <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                          No activity this quarter
+                        </label> </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                        <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                          Key control checks not in place - new activity this quarter
+                        </label> </div>
+                    </div>
+                  </fieldset>
+                </div>
+
             </div>
+
             <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-2" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-2">
-                Custody Time Limits
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-2" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-2">
-                Documents to PECS
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-4" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-4">
-                Information Security
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-5" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-5">
-                Anti Money Laundering
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
-                Business Continuity
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
-                Business Continuity
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
+              <input class="govuk-checkboxes__input" id="responsibility-conditional-8" name="activity" type="checkbox" value="managing fraud" data-aria-controls="conditional-responsibility-conditional-8">
+              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-8">
                 Effectively Managing Fraud
-              </label>
+              </label> </div>
+            <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-8">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                    <h1 class="govuk-fieldset__heading">
+                      Why were key control checks not completed against this activity?
+                    </h1>
+                  </legend>
+                  <span id="responsibility-conditional-hint" class="govuk-hint">
+                    Select one option.
+                  </span>
+                  <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                      <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                        Capacity
+                      </label> </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                      <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                        Knowledge and capability
+                      </label> </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                      <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                        No activity this quarter
+                      </label> </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                      <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                        Key control checks not in place - new activity this quarter
+                      </label> </div>
+                  </div>
+                </fieldset>
+              </div>
+
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="responsibility-conditional-9" name="activity" type="checkbox" value="stationary" data-aria-controls="conditional-responsibility-conditional-9">
+            <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-9">
+              Financial Stationary
+            </label> </div>
+          <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-9">
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                  <h1 class="govuk-fieldset__heading">
+                    Why were key control checks not completed against this activity?
+                  </h1>
+                </legend>
+                <span id="responsibility-conditional-hint" class="govuk-hint">
+                  Select one option.
+                </span>
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                    <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                      Capacity
+                    </label> </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                    <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                      Knowledge and capability
+                    </label> </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                    <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                      No activity this quarter
+                    </label> </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                    <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                      Key control checks not in place - new activity this quarter
+                    </label> </div>
+                </div>
+              </fieldset>
             </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
-                Financial Stationary
-              </label>
+
+        </div>
+
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="responsibility-conditional-10" name="activity" type="checkbox" value="tfm" data-aria-controls="conditional-responsibility-conditional-10">
+          <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-10">
+            TFM Contracts
+          </label> </div>
+        <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-10">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                <h1 class="govuk-fieldset__heading">
+                  Why were key control checks not completed against this activity?
+                </h1>
+              </legend>
+              <span id="responsibility-conditional-hint" class="govuk-hint">
+                Select one option.
+              </span>
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                  <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                    Capacity
+                  </label> </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                  <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                    Knowledge and capability
+                  </label> </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                  <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                    No activity this quarter
+                  </label> </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                  <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                    Key control checks not in place - new activity this quarter
+                  </label> </div>
+              </div>
+            </fieldset>
+          </div>
+
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="responsibility-conditional-11" name="activity" type="checkbox" value="mag case process" data-aria-controls="conditional-responsibility-conditional-11">
+        <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-11">
+          Magistrates Case Process
+        </label> </div>
+      <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-11">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+              <h1 class="govuk-fieldset__heading">
+                Why were key control checks not completed against this activity?
+              </h1>
+            </legend>
+            <span id="responsibility-conditional-hint" class="govuk-hint">
+              Select one option.
+            </span>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+                <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                  Capacity
+                </label> </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+                <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                  Knowledge and capability
+                </label> </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+                <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                  No activity this quarter
+                </label> </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+                <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                  Key control checks not in place - new activity this quarter
+                </label> </div>
             </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
-                Agency Staff
-              </label>
+          </fieldset>
+        </div>
+
+    </div>
+
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="responsibility-conditional-12" name="activity" type="checkbox" value="keys" data-aria-controls="conditional-responsibility-conditional-12">
+      <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-12">
+        Management of Keys
+      </label> </div>
+    <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-responsibility-conditional-12">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+            <h1 class="govuk-fieldset__heading">
+              Why were key control checks not completed against this activity?
+            </h1>
+          </legend>
+          <span id="responsibility-conditional-hint" class="govuk-hint">
+            Select one option.
+          </span>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="why-not-checked-1" name="why-not-checked" type="radio" value="capacity">
+              <label class="govuk-label govuk-radios__label" for="why-not-checked-1">
+                Capacity
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="why-not-checked-2" name="why-not-checked" type="radio" value="knowledge">
+              <label class="govuk-label govuk-radios__label" for="why-not-checked-2">
+                Knowledge and capability
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="why-not-checked-3" name="why-not-checked" type="radio" value="no activity">
+              <label class="govuk-label govuk-radios__label" for="why-not-checked-3">
+                No activity this quarter
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="why-not-checked-4" name="why-not-checked" type="radio" value="new activity">
+              <label class="govuk-label govuk-radios__label" for="why-not-checked-4">
+                Key control checks not in place - new activity this quarter
+              </label> </div>
+          </div>
+        </fieldset>
+      </div>
+
+          </div>
+              </div>
+            </fieldset>
             </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
-                TFM Contracts
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
-                Magistrates Case Process
-              </label>
-            </div>
-            <div class="govuk-checkboxes__item">
-              <input class="govuk-checkboxes__input" id="responsibility-6" name="ident-doc" type="checkbox" value="responsible" data-aria-controls="responsibility-conditional-1">
-              <label class="govuk-label govuk-checkboxes__label" for="responsibility-conditional-6">
-                Management of Keys
-              </label>
             </div>
           </div>
         </div>
       </div>
-      </div>
     </div>
-  </fieldset>
-</div>
-
-
 
 <div class="govuk-grid-row">
 <div class="govuk-grid-column-one-third">
