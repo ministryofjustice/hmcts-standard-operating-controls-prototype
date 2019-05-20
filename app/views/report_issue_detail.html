@@ -1,0 +1,171 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "task_list"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-xl">ISSUE: Documents to PECS</span>
+    <h1 class="govuk-heading-l">Tell us more about the issue you are reporting</h1>
+
+    <div class="govuk-form-group">
+    <h2 class="govuk-heading-m">Summarise the issue</h2>
+  <span id="issue-summary-hint" class="govuk-hint">
+    Provide details of the frequency of the issue and the impact on your operational site.
+  </span>
+  <textarea class="govuk-textarea" id="issue-summary" name="issue-summary" rows="5" aria-describedby="issue-summary-hint"></textarea>
+</div>
+
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="cause-hint">
+<legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+  <h2 class="govuk-fieldset__heading">
+    Select the root cause of the issue
+  </h2>
+</legend>
+<span id="cause-hint" class="govuk-hint">
+  Select as many as apply.
+</span>
+<div class="govuk-checkboxes">
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="cause-1" name="cause" type="checkbox" value="knowledge" aria-describedby="cause-1-item-hint">
+    <label class="govuk-label govuk-checkboxes__label" for="cause-1">
+      Knowledge and capability
+  </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="cause-2" name="cause" type="checkbox" value="capacity">
+    <label class="govuk-label govuk-checkboxes__label" for="cause-2">
+      Capacity
+    </label> </div>
+  <div class="govuk-checkboxes__item">
+    <input class="govuk-checkboxes__input" id="cause-3" name="cause" type="checkbox" value="gdpr">
+    <label class="govuk-label govuk-checkboxes__label" for="cause-3">
+      RRDS/ GDPR
+    </label> </div>
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="cause-4" name="cause" type="checkbox" value="it issues">
+      <label class="govuk-label govuk-checkboxes__label" for="cause-4">
+        IT issues
+      </label> </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="cause-5" name="cause" type="checkbox" value="key controls">
+        <label class="govuk-label govuk-checkboxes__label" for="cause-5">
+          Key controls
+        </label> </div>
+</div>
+</fieldset>
+</div>
+
+
+<div class="govuk-form-group">
+  <h2 class="govuk-heading-m">Tell us more about what caused the issue</h2>
+  <span id="cause-summary-hint" class="govuk-hint">
+  Provide details on which key controls failed and why they failed in this quarter.
+  </span>
+  <textarea class="govuk-textarea" id="cause-summary" name="cause-summary" rows="5" aria-describedby="cause-summary-hint"></textarea>
+</div>
+
+<div class="govuk-form-group">
+  <h2 class="govuk-heading-m">What actions are being taken to address the root cause of the issue identified?</h2>
+  <span id="issue-summary-hint" class="govuk-hint">
+  Summarise all of the actions that are being taken.
+  </span>
+  <textarea class="govuk-textarea" id="issue-summary" name="issue-summary" rows="5" aria-describedby="issue-summary-hint"></textarea>
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label--m" for="action-owner">
+    Who is the action owner?
+  </label>
+  <span id="action-owner-hint" class="govuk-hint">
+    Enter their full name
+  </span>
+  <input class="govuk-input govuk-input--width-20" id="action-owner" name="action-owner" type="text" aria-describedby="action-owner-hint">
+</div>
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="action-hint" role="group">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      What is the target date for the action?
+    </legend>
+    <span id="action-hint" class="govuk-hint">
+      For example, 31 3 2019
+    </span>
+    <div class="govuk-date-input" id="action">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="action-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="action-day" name="action-day" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="action-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="action-month" name="action-month" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="action-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="action-year" name="action-year" type="number" pattern="[0-9]*">
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<div class="govuk-!-padding-bottom-5"></div>
+
+<div class="block-space">
+  <button class="govuk-button" type="submit">
+    Save and continue
+  </button>
+
+    </div>
+  </div>
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-one-third">
+ <aside class="app-related-items" role="complementary">
+           <nav role="navigation" aria-labelledby="subsection-title">
+             <ul class="govuk-list govuk-!-font-size-16">
+               <li>
+                 <span class="govuk-caption-m">Q3 2019</span>
+               </li>
+               <li>
+                 <h2 class="govuk-heading-s">Manchester - Crown Square</h2>
+               </li>
+             </ul>
+           </nav>
+         </aside>
+       </div>
+     </div>
+
+
+
+{% endblock %}

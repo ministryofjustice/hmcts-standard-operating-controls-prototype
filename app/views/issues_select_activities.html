@@ -1,0 +1,132 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "task_list"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="activity-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        What activities are you reporting issues against?
+      </h1>
+    </legend>
+    <span id="activity-hint" class="govuk-hint">
+      You can select multiple activities and return here to change your answers before submitting your report.
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="activity-1" name="activity" type="checkbox" value="mag resulting" aria-describedby="activity-1-item-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="activity-1">
+          Magistrates Court Resulting SOP
+        <!-- </label> <span id="activity-1-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          including English, Scottish, Welsh and Northern Irish
+        </span>  -->
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="activity-2" name="activity" type="checkbox" value="custody time limits">
+        <label class="govuk-label govuk-checkboxes__label" for="activity-2">
+          Custody Time Limits
+        </label> </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="activity-3" name="activity" type="checkbox" value="docs to pecs">
+        <label class="govuk-label govuk-checkboxes__label" for="activity-3">
+          Documents to PECS
+        </label> </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="activity-4" name="activity" type="checkbox" value="info security">
+          <label class="govuk-label govuk-checkboxes__label" for="activity-4">
+            Information Security
+          </label> </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="activity-5" name="activity" type="checkbox" value="anti money laundering">
+            <label class="govuk-label govuk-checkboxes__label" for="activity-5">
+              Anti Money Laundering
+            </label> </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="activity-6" name="activity" type="checkbox" value="bus continuity">
+              <label class="govuk-label govuk-checkboxes__label" for="activity-6">
+                Business Continuity
+              </label> </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="activity-7" name="activity" type="checkbox" value="manag fraud">
+                <label class="govuk-label govuk-checkboxes__label" for="activity-7">
+                  Effectively Managing Fraud
+                </label> </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="activity-8" name="activity" type="checkbox" value="stationary">
+                  <label class="govuk-label govuk-checkboxes__label" for="activity-8">
+                    Financial Stationary
+                  </label> </div>
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="activity-9" name="activity" type="checkbox" value="agency staff">
+                    <label class="govuk-label govuk-checkboxes__label" for="activity-9">
+                      Agency Staff
+                    </label> </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="activity-10" name="activity" type="checkbox" value="tfm">
+                      <label class="govuk-label govuk-checkboxes__label" for="activity-10">
+                        TFM Contracts
+                      </label> </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="activity-11" name="activity" type="checkbox" value="mags case process">
+                        <label class="govuk-label govuk-checkboxes__label" for="activity-11">
+                          Magistrates Case Process
+                        </label> </div>
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="activity-12" name="activity" type="checkbox" value="keys">
+                          <label class="govuk-label govuk-checkboxes__label" for="activity-12">
+                            Management of Keys
+                          </label> </div>
+
+    </div>
+  </fieldset>
+</div>
+</div>
+
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-one-third">
+ <aside class="app-related-items" role="complementary">
+           <nav role="navigation" aria-labelledby="subsection-title">
+             <ul class="govuk-list govuk-!-font-size-16">
+               <li>
+                 <span class="govuk-caption-m">Q3 2019</span>
+               </li>
+               <li>
+                 <h2 class="govuk-heading-s">Manchester - Crown Square</h2>
+               </li>
+             </ul>
+           </nav>
+         </aside>
+       </div>
+     </div>
+
+     <div class="block-space">
+       <button class="govuk-button" type="submit">
+         Save and continue
+       </button>
+
+
+
+{% endblock %}
