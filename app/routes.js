@@ -96,7 +96,7 @@ res.redirect('/task_list')
 router.post('/issues_select_activities', function (req, res) {
 Object.assign(req.session.data,req.body)
 console.log(req.session.data)
-res.redirect('/issues_list')
+res.redirect('/report_issue_detail')
 })
 
 router.post('/report_issue_detail', function (req, res) {
@@ -104,13 +104,5 @@ Object.assign(req.session.data,req.body)
 console.log(req.session.data)
 res.redirect('/task_list')
 })
-
-router.post('/report_issue_detail', function (req, res) {
-Object.assign(req.session.data,req.body)
-console.log(req.session.data)
-res.redirect('/task_list')
-})
-
-
 
 module.exports = router

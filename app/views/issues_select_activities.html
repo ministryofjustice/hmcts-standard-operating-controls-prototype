@@ -21,8 +21,10 @@
 
 {% block content %}
 
+<form method="post" action="/report_issue_detail">
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+
 
     <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="activity-hint">
@@ -101,11 +103,20 @@
 
     </div>
   </fieldset>
+
+  <div class="govuk-!-padding-bottom-5"></div>
+  <div class="block-space">
+    <button class="govuk-button" type="submit">
+      Save and continue
+    </button>
+</div>
+
 </div>
 </div>
 
+</form>
 
-<div class="govuk-grid-row">
+
 <div class="govuk-grid-column-one-third">
  <aside class="app-related-items" role="complementary">
            <nav role="navigation" aria-labelledby="subsection-title">
@@ -122,10 +133,8 @@
        </div>
      </div>
 
-     <div class="block-space">
-       <button class="govuk-button" href="report_issue_detail" type="submit">
-         Save and continue
-       </button>
+
+
 
 
 
