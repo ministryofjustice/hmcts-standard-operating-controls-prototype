@@ -85,6 +85,31 @@
 </div>
 
 <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="significant-risk-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h3 class="govuk-fieldset__heading">
+        Do you want to record this as a significant issue?
+      </h3>
+    </legend>
+    <span id="significant-risk-hint" class="govuk-hint">
+      If you select 'yes' this issue will be flagged to the Operational Manager/ Deputy Justice Clerk for your operational area.
+    </span>
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="significant-risk-1" name="significant-risk" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="significant-risk-1">
+          Yes
+        </label> </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="significant-risk-2" name="significant-risk" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="significant-risk-2">
+          No
+        </label> </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="govuk-form-group">
   <h2 class="govuk-heading-m">What actions are being taken to address the root cause of the issue identified?</h2>
   <span id="issue-summary-hint" class="govuk-hint">
   Summarise all of the actions that are being taken.
@@ -97,7 +122,7 @@
     Who is the action owner?
   </label>
   <span id="action-owner-hint" class="govuk-hint">
-    Enter their full name
+    Enter their full name.
   </span>
   <input class="govuk-input govuk-input--width-20" id="action-owner" name="action-owner" type="text" aria-describedby="action-owner-hint">
 </div>
