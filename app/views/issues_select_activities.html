@@ -21,20 +21,21 @@
 
 {% block content %}
 
-<form method="post" action="/report_issue_detail">
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+    <form method="post" action="/report_issue_detail">
 
 
     <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="activity-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-        What activities are you reporting issues against?
+        What activity are you reporting issues against?
       </h1>
     </legend>
     <span id="activity-hint" class="govuk-hint">
-      You can select multiple activities and return here to change your answers before submitting your report.
+      Select one activity from the list.
     </span>
     <div class="govuk-checkboxes">
       <div class="govuk-checkboxes__item">
@@ -105,17 +106,16 @@
   </fieldset>
 
   <div class="govuk-!-padding-bottom-5"></div>
-  <div class="block-space">
-    <button class="govuk-button" type="submit">
-      Save and continue
-    </button>
-</div>
 
-</div>
-</div>
+  <div class="block-space">
+    <a class="govuk-button govuk-button" href="report_issue_detail" role="button">
+      Save and continue
+    </a>
+    </div>
 
 </form>
-
+</div>
+</div>
 
 <div class="govuk-grid-column-one-third">
  <aside class="app-related-items" role="complementary">
@@ -132,10 +132,5 @@
          </aside>
        </div>
      </div>
-
-
-
-
-
 
 {% endblock %}
