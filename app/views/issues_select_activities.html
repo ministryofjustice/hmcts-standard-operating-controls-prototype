@@ -26,8 +26,129 @@
   <div class="govuk-grid-column-two-thirds">
     <form method="post" action="/report_issue_detail">
 
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              What activity are you reporting issues against?
+            </h1>
+          </legend>
+          <span id="activity-hint" class="govuk-hint">
+            Select one activity from the list.
+          </span>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="activity-1" name="activity" type="radio" value="appeal against bail">
+              <label class="govuk-label govuk-radios__label" for="activity-1">
+                Appeal against grant of bail
+              </label> </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="activity-2" name="activity" type="radio" value="vary bail">
+              <label class="govuk-label govuk-radios__label" for="activity-2">
+                Application to vary bail
+              </label> </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="activity-3" name="activity" type="radio" value="bail appl">
+                <label class="govuk-label govuk-radios__label" for="activity-3">
+                  Bail application to the Crown Court
+                </label> </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="activity-4" name="activity" type="radio" value="ctl">
+                  <label class="govuk-label govuk-radios__label" for="activity-4">
+                    Custody time limits
+                  </label> </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="activity-5" name="activity" type="radio" value="disposals">
+                    <label class="govuk-label govuk-radios__label" for="activity-5">
+                      Disposals (Crown Court)
+                    </label> </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="activity-6" name="activity" type="radio" value="PECS">
+                      <label class="govuk-label govuk-radios__label" for="activity-6">
+                        Documents to PECS
+                      </label> </div>
+                      <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="activity-7" name="activity" type="radio" value="PECS contract">
+                        <label class="govuk-label govuk-radios__label" for="activity-7">
+                          Prisoner Escort and Custody Services (PECS) Contract KCCS
+                        </label> </div>
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="activity-8" name="activity" type="radio" value="post opening">
+                          <label class="govuk-label govuk-radios__label" for="activity-8">
+                            Post opening
+                          </label> </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="activity-9" name="activity" type="radio" value="info security">
+                            <label class="govuk-label govuk-radios__label" for="activity-9">
+                              Information Security
+                            </label> </div>
+                            <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="activity-10" name="activity" type="radio" value="aml">
+                              <label class="govuk-label govuk-radios__label" for="activity-10">
+                                AML
+                              </label> </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="activity-11" name="activity" type="radio" value="bcp">
+                                <label class="govuk-label govuk-radios__label" for="activity-11">
+                                  Business Continuity Plan
+                                </label> </div>
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="activity-12" name="activity" type="radio" value="backlog">
+                                  <label class="govuk-label govuk-radios__label" for="activity-12">
+                                    Preparation daily backlog
+                                  </label> </div>
+                                  <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="activity-13" name="activity" type="radio" value="fraud mngmt">
+                                    <label class="govuk-label govuk-radios__label" for="activity-13">
+                                      Fraud management
+                                    </label> </div>
+                                    <div class="govuk-radios__item">
+                                      <input class="govuk-radios__input" id="activity-14" name="activity" type="radio" value="aml">
+                                      <label class="govuk-label govuk-radios__label" for="activity-14">
+                                        Financial stationary
+                                      </label> </div>
+                                      <div class="govuk-radios__item">
+                                        <input class="govuk-radios__input" id="activity-15" name="activity" type="radio" value="agency staff">
+                                        <label class="govuk-label govuk-radios__label" for="activity-15">
+                                          Agency staff
+                                        </label> </div>
+                                        <div class="govuk-radios__item">
+                                          <input class="govuk-radios__input" id="activity-16" name="activity" type="radio" value="Interpreters on">
+                                          <label class="govuk-label govuk-radios__label" for="activity-16">
+                                            Interpreters ON contract
+                                          </label> </div>
+                                          <div class="govuk-radios__item">
+                                            <input class="govuk-radios__input" id="activity-17" name="activity" type="radio" value="interpreters off">
+                                            <label class="govuk-label govuk-radios__label" for="activity-17">
+                                              Interpreters OFF contract
+                                            </label> </div>
+                                            <div class="govuk-radios__item">
+                                              <input class="govuk-radios__input" id="activity-18" name="activity" type="radio" value="suspense">
+                                              <label class="govuk-label govuk-radios__label" for="activity-18">
+                                                Suspense and suspense delivery
+                                              </label> </div>
+                                              <div class="govuk-radios__item">
+                                                <input class="govuk-radios__input" id="activity-19" name="activity" type="radio" value="payment requests">
+                                                <label class="govuk-label govuk-radios__label" for="activity-19">
+                                                  Payment requests via GBS
+                                                </label> </div>
+                                                <div class="govuk-radios__item">
+                                                  <input class="govuk-radios__input" id="activity-20" name="activity" type="radio" value="tfm">
+                                                  <label class="govuk-label govuk-radios__label" for="activity-20">
+                                                    TFM contracts
+                                                  </label> </div>
+                                                  <div class="govuk-radios__item">
+                                                    <input class="govuk-radios__input" id="activity-21" name="activity" type="radio" value="keys">
+                                                    <label class="govuk-label govuk-radios__label" for="activity-21">
+                                                      Management of keys
+                                                    </label> </div>
 
-    <div class="govuk-form-group">
+          </div>
+        </fieldset>
+
+
+
+    <!-- <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="activity-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
@@ -42,9 +163,6 @@
         <input class="govuk-checkboxes__input" id="activity-1" name="activity" type="checkbox" value="mag resulting" aria-describedby="activity-1-item-hint">
         <label class="govuk-label govuk-checkboxes__label" for="activity-1">
           Magistrates Court Resulting SOP
-        <!-- </label> <span id="activity-1-item-hint" class="govuk-hint govuk-checkboxes__hint">
-          including English, Scottish, Welsh and Northern Irish
-        </span>  -->
       </div>
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="activity-2" name="activity" type="checkbox" value="custody time limits">
@@ -103,7 +221,7 @@
                           </label> </div>
 
     </div>
-  </fieldset>
+  </fieldset> -->
 
   <div class="govuk-!-padding-bottom-5"></div>
 

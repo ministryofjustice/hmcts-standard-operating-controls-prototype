@@ -232,3 +232,43 @@ div.clear-search {
   text-decoration: none;
   text-transform: capitalize;
 }
+
+.govuk-dashboard-data {
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  // font-size: 24px;
+  font-size: 6.2rem;
+  line-height: 1.25;
+  display: inline-block;
+  padding: 4px 8px;
+  padding-bottom: 1px;
+  outline: 3px solid #ffffff;
+  outline-offset: -1px;
+  color: #00A598;
+  background-color: #ffffff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.govuk-dashboard-button {
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  // font-size: 24px;
+  font-size: 1.8rem;
+  line-height: 1.25;
+  display: inline-block;
+  padding: 4px 8px;
+  padding-bottom: 30px;
+  outline: 3px solid #00A598;
+  outline-offset: -1px;
+  color: #ffffff;
+  background-color: #00A598;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: none;
+}
