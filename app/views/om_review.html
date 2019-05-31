@@ -15,7 +15,7 @@
 
   {{ govukBackLink({
     text: "Back",
-      href: "#"
+      href: "om_dashboard"
   }) }}
 {% endblock %}
 
@@ -44,12 +44,12 @@
           <div class="govuk-grid-column-one-quarter">
           <p class="govuk-dashboard-data" id="total-checks-incomplete">4</p>
         </div>
-          <div class="govuk-grid-column-one-half">
+          <div class="govuk-grid-column-one-half" style="border-left-width: 3px">
           </br>
         </br>
           <h2 class="govuk-heading-s">checks not completed</strong></h2>
         </div>
-        <div class="govuk-dashboard-button"><a class="govuk-link" href="#">
+        <div class="govuk-dashboard-box"><a class="govuk-link" href="/om_review_checks_not_completed">
           View checks not complete</a>
           <span class="govuk-visually-hidden"> view checks not complete</span>
         </div>
@@ -57,12 +57,12 @@
         <div class="govuk-grid-column-one-third">
           <div class="govuk-grid-column-one-quarter">
           <p class="govuk-dashboard-data" id="total-reported-issues">9</p></div>
-          <div class="govuk-grid-column-one-half">
+          <div class="govuk-grid-column-one-half" style="border-left-width: 3px">
           </br>
         </br>
           <h2 class="govuk-heading-s">issues reported</strong></h2>
         </div>
-        <div class="govuk-dashboard-button"><a class="govuk-link" href="#">
+        <div class="govuk-dashboard-box"><a class="govuk-link" href="#">
           View reported issues</a>
           <span class="govuk-visually-hidden"> view reported issues</span>
         </div>
@@ -70,12 +70,12 @@
         <div class="govuk-grid-column-one-third">
           <div class="govuk-grid-column-one-quarter">
           <p class="govuk-dashboard-data" id="total-activities-not-responsible">5</p></div>
-          <div class="govuk-grid-column-one-half">
+          <div class="govuk-grid-column-one-half" style="border-left-width: 3px">
           </br>
         </br>
           <h2 class="govuk-heading-s">activities not applicable</strong></h2>
         </div>
-        <div class="govuk-dashboard-button"><a class="govuk-link" href="om_dashboard">
+        <div class="govuk-dashboard-box"><a class="govuk-link" href="/om_review_activities_not_applicable">
           View activities recorded as not applicable</a>
           <span class="govuk-visually-hidden"> view not applicable activities</span>
         </div>

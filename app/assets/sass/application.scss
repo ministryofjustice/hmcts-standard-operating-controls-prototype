@@ -239,7 +239,7 @@ div.clear-search {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   // font-size: 24px;
-  font-size: 6.2rem;
+  font-size: 6.5rem;
   line-height: 1.25;
   display: inline-block;
   padding: 4px 8px;
@@ -250,10 +250,10 @@ div.clear-search {
   background-color: #ffffff;
   letter-spacing: 1px;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
-.govuk-dashboard-button {
+.govuk-dashboard-box {
   font-family: "nta", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -263,7 +263,7 @@ div.clear-search {
   line-height: 1.25;
   display: inline-block;
   padding: 4px 8px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   outline: 4px solid #00A598;
   outline-offset: -1px;
   color: #00A598;

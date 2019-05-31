@@ -8,16 +8,16 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll();
 
-  
-  var govukDashboardButtonsHeight = [],
+
+  var govukDashboardBoxsHeight = [],
       maxHeight = 0;
-  $('.govuk-dashboard-button').each(function(k, v){
-    govukDashboardButtonsHeight.push($(v).height());
+  $('.govuk-dashboard-box').each(function(k, v){
+    govukDashboardBoxsHeight.push($(v).height());
   });
 
-  maxHeight = Math.max.apply(null,govukDashboardButtonsHeight);
+  maxHeight = Math.max.apply(null,govukDashboardBoxsHeight);
 
-  $('.govuk-dashboard-button').each(function(k, v){
+  $('.govuk-dashboard-box').each(function(k, v){
     $(v).height(maxHeight);
   });
 })
