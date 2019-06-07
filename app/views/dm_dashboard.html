@@ -1,0 +1,116 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full-width">
+
+      <h1 class="govuk-heading-l">Open SOC reports</h1>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key" style="width: 60px">
+            Q2 2019
+          </dt>
+          <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 150px">
+              Manchester - Crown Square
+          </dd>
+          <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 100px">
+              <!-- Due 01 Aug 2019 -->
+          </dd>
+          <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 50px">
+              <span class="hmcts-badge" >New</span>
+          </dd>
+          <dd class="govuk-summary-list__actions" style="width: 50px">
+            <a class="govuk-link" href="/task_list">
+              View
+              <span class="govuk-visually-hidden"> quarter_1</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key" style="width: 70px">
+            Q2 2019
+          </dt>
+          <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 150px">
+              Manchester - Magistrates
+          </dd>
+          <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 100px">
+              <!-- Due 01 Aug 2019 -->
+          </dd>
+          <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 50px" style="text-align:center;">
+              <span class="hmcts-badge">In progress</span>
+          </dd>
+          <dd class="govuk-summary-list__actions" style="width: 50px">
+            <a class="govuk-link" href=#>
+              View
+              <span class="govuk-visually-hidden"> quarter_1</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+        <h1 class="govuk-heading-l">Past SOC reports</h1>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width: 60px">
+              Q1 2019
+            </dt>
+            <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 150px">
+                Manchester - Crown Square
+            </dd>
+            <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 100px">
+                <!-- Due 01 Aug 2019 -->
+            </dd>
+            <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 50px">
+                <!-- <span class="hmcts-badge" >In progress</span> -->
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width: 50px">
+              <a class="govuk-link" href="#">
+                View
+                <span class="govuk-visually-hidden"> quarter_1</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width: 70px">
+              Q1 2019
+            </dt>
+            <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 150px">
+                Manchester - Magistrates
+            </dd>
+            <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 100px">
+                <!-- Due 01 Aug 2019 -->
+            </dd>
+            <dd class="govuk-summary-list__actions" style="text-align:left;" style="width: 50px" style="text-align:center;">
+                <!-- <span class="hmcts-badge hmcts-badge--red">Ready for review</span> -->
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width: 50px">
+              <a class="govuk-link" href=#>
+                View
+                <span class="govuk-visually-hidden"> quarter_1</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+
+</div>
+
+{% endblock %}
