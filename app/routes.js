@@ -105,4 +105,23 @@ console.log(req.session.data)
 res.redirect('/report_issue_detail')
 })
 
+router.post('/checks_status_answer', function (req, res) {
+
+  // Make a variable and give it the value from 'juggling-balls'
+  var checksStatus = req.session.data['checks_status']
+
+  // Check whether the variable matches a condition
+  if (checksStatus == "yes"){
+    // Send user to next page
+    res.redirect('/task_list')
+  }
+  else {
+    // Send user to ineligible page
+    res.redirect('/checks_status_no_why')
+  }
+
+})
+
+
+
 module.exports = router

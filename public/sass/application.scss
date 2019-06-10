@@ -190,27 +190,7 @@ div.clear-search {
   background-color: #ffffff;
   letter-spacing: 1px;
   text-decoration: none;
-  text-transform: capitalize;
-}
-
-.govuk-tag-done {
-  font-family: "nta", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 14px;
-  font-size: 1.2rem;
-  line-height: 1.25;
-  display: inline-block;
-  padding: 4px 8px;
-  padding-bottom: 1px;
-  outline: 3px solid #225EA0;
-  outline-offset: -1px;
-  color: #ffffff;
-  background-color: #225EA0;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .govuk-tag-started {
@@ -230,7 +210,7 @@ div.clear-search {
   background-color: #000000;
   letter-spacing: 1px;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .govuk-dashboard-data {
