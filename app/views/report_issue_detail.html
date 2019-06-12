@@ -31,7 +31,7 @@
     <div class="govuk-form-group">
     <h2 class="govuk-heading-m">Summarise the issue</h2>
   <span id="issue-summary-hint" class="govuk-hint">
-    Provide details of what the issue is, which controls are affected and the frequency of the issue.
+    Provide details of what the issue is, which key controls are affected and the frequency of the issue.
   </span>
   <textarea class="govuk-textarea" id="issue-summary" name="issue-summary" rows="5" aria-describedby="issue-summary-hint">{{ data["issue-summary"] }}</textarea>
 </div>
@@ -53,7 +53,7 @@
       Knowledge and capability
     </label>
     <span id="cause-1-hint" class="govuk-hint govuk-checkboxes__hint">
-        including training, human error, and lack of understanding
+        including training, human error, and lack of understanding.
       </span>
   </div>
   <div class="govuk-checkboxes__item">
@@ -62,7 +62,7 @@
       Capacity
     </label>
     <span id="cause-2-hint" class="govuk-hint govuk-checkboxes__hint">
-        including staffing issues and movement of staff
+        including staffing issues and movement of staff.
       </span></div>
   <div class="govuk-checkboxes__item">
     <input class="govuk-checkboxes__input" id="cause-3" name="cause" type="checkbox" value="gdpr" {{ checked( "cause", "gdpr" ) }}>
@@ -78,7 +78,7 @@
         IT issues
       </label>
       <span id="cause-2-hint" class="govuk-hint govuk-checkboxes__hint">
-          including IT system downtime and failed technology
+          including IT system downtime and failed technology.
         </span> </div>
       <div class="govuk-checkboxes__item">
         <input class="govuk-checkboxes__input" id="cause-5" name="cause" type="checkbox" value="key controls" {{ checked( "cause", "key controls" ) }}>
@@ -86,12 +86,20 @@
           Key controls
         </label>
         <span id="cause-2-hint" class="govuk-hint govuk-checkboxes__hint">
-            including key controls no longer being applicable or reflecting local working practices
+            including key controls no longer being applicable or reflecting local working practices.
           </span> </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="cause-5" name="cause" type="checkbox" value="key controls" {{ checked( "cause", "key controls" ) }}>
+            <label class="govuk-label govuk-checkboxes__label" for="cause-6">
+              Other
+            </label>
+            <span id="cause-2-hint" class="govuk-hint govuk-checkboxes__hint">
+                provide details in the free text box below.
+              </span> </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="cause-6" name="cause" type="checkbox" value="other" {{ checked( "cause", "other" ) }}>
 </div>
 </fieldset>
-</div>
-
 
 <div class="govuk-form-group">
   <h2 class="govuk-heading-m">Tell us more about what caused the issue</h2>
@@ -99,6 +107,14 @@
   Provide details on the root cause of the issue and why it caused checks to fail.
   </span>
   <textarea class="govuk-textarea" id="cause-summary" name="cause-summary" rows="5" aria-describedby="cause-summary-hint" >{{ data['cause-summary'] }}</textarea>
+</div>
+
+<div class="govuk-form-group">
+  <h2 class="govuk-heading-m">What actions are being taken to address the root cause of the issue identified?</h2>
+  <span id="issue-summary-hint" class="govuk-hint">
+  Summarise all of the actions that are being taken.
+  </span>
+  <textarea class="govuk-textarea" id="action" name="action" rows="5" aria-describedby="issue-summary-hint">{{ data['action'] }}</textarea>
 </div>
 
 <div class="govuk-form-group">
@@ -126,67 +142,15 @@
   </fieldset>
 </div>
 
-
-<div class="govuk-form-group">
-  <h2 class="govuk-heading-m">What actions are being taken to address the root cause of the issue identified?</h2>
-  <span id="issue-summary-hint" class="govuk-hint">
-  Summarise all of the actions that are being taken.
-  </span>
-  <textarea class="govuk-textarea" id="action" name="action" rows="5" aria-describedby="issue-summary-hint">{{ data['action'] }}</textarea>
 </div>
-
-<!-- <div class="govuk-form-group">
-  <label class="govuk-label govuk-label--m" for="action-owner">
-    Who is the action owner?
-  </label>
-  <span id="action-owner-hint" class="govuk-hint">
-    Enter their full name.
-  </span>
-  <input class="govuk-input govuk-input--width-20" id="action-owner" name="action-owner" type="text" aria-describedby="action-owner-hint">
-</div> -->
-
-
-<!-- <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="action-hint" role="group">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-      What is the target date for the action?
-    </legend>
-    <span id="action-hint" class="govuk-hint">
-      For example, 31 3 2019
-    </span>
-    <div class="govuk-date-input" id="action">
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="action-day">
-            Day
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="action-day" name="action-day" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="action-month">
-            Month
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="action-month" name="action-month" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-      <div class="govuk-date-input__item">
-        <div class="govuk-form-group">
-          <label class="govuk-label govuk-date-input__label" for="action-year">
-            Year
-          </label>
-          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="action-year" name="action-year" type="number" pattern="[0-9]*">
-        </div>
-      </div>
-    </div>
-  </fieldset>
-</div>
-<div class="govuk-!-padding-bottom-5"></div> -->
 
 <div class="block-space">
   <button class="govuk-button" href="issues_list_w_updates" type="submit">
-    Save and continue
+    Submit
+  </button>
+
+  <button class="govuk-button hmcts-button--secondary" type="submit" formaction="issues_list_w_updates" tabindex="0" style="padding-bottom: 10px;margin-left: 15px" 15px>
+    Save as draft
   </button>
 
     </div>
