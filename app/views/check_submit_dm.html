@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "task_list"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full-width ">
+    <h1 class="govuk-heading-l govuk-!-margin-bottom-4">
+      Check your report before submitting to your manager
+    </h1>
+
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-4">
+      Manchester - Crown Square
+      <span class="govuk-heading-m govuk-!-font-weight-regular">Q2 2019</span>
+    </h2>
+
+
+    <nav id="nav" style="position:sticky; top:0px">
+      <div class="navbar">
+        <ul class="navbar__list-items">
+          <li class="active">
+            <a href="#responsibilities">Responsibilities</a>
+          </li>
+          <li>
+            <a href="#issues">Reported issues</a>
+          </li>
+          <li>
+            <a href="#checks">Status of checks</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full"></div>
+    </div>
+
+    <a name="responsibilities"></a>
+    <h2 class="govuk-heading-l" style="padding-top: 80px;
+    margin-top: -80px;">
+      Activities you are responsible for
+    </h2>
+
+    <!-- <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">SOC activities you told us you are responsible for</h2>
+      </div>
+      <div class="govuk-grid-column-one-third">
+      </div>
+    </div> -->
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption">SOC activities you told us you are responsible for</caption>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell govuk-body" scope="row">Anti Money Laundering</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell govuk-body" scope="row">Business Continuity Plan</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell govuk-body" scope="row">Civil Bailiff enforcement & service</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell govuk-body" scope="row">Effectively Managing Fraud</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell govuk-body" scope="row">Interpreters ON contract</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell govuk-body" scope="row">Interpreters OFF contract</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell govuk-body" scope="row">Management of keys</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__cell govuk-body" scope="row">TFM Contracts</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+        </tr>
+      </tbody>
+    </table>
+
+  <table class="govuk-table" style="margin-bottom: 15px;">
+
+    <a name="issues"></a>
+    <h2 class="govuk-heading-l"  style="padding-top: 80px;
+    margin-top: -80px;">Reported issues</h2>
+
+
+  <a name="checks"></a>
+  <h2 class="govuk-heading-l"  style="padding-top: 80px;
+  margin-top: -80px;">
+    Status of key control checks
+  </h2>
+
+
+
+  
+  <h3 class="govuk-heading-l">Client declaration</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <h3 class="govuk-heading-s">Client signature:</h3>
+  <!-- <div class="govuk-grid-column-two-thirds" style="border:1px solid black"></div> -->
+  <h3 class="govuk-heading-s">Date:</h3>
+</div>
+<!-- <div class="govuk-grid-column-one-third">
+ <aside class="app-related-items" role="complementary" style="position:sticky; top:0px">
+           <nav role="navigation" aria-labelledby="subsection-title">
+             <ul class="govuk-list govuk-!-font-size-16">
+               <li>
+                 <span class="govuk-caption-m">Q3 2019</span>
+               </li>
+               <li>
+                 <h2 class="govuk-heading-s">Manchester - Crown Square</h2>
+               </li>
+             </ul>
+           </nav>
+         </aside>
+       </div> -->
+     </div>
+</div>
+
+{% endblock %}
