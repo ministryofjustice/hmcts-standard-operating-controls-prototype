@@ -1,0 +1,58 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-width-container">
+
+        <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="padding-top: 0px">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              <div class="govuk-panel govuk-panel--confirmation">
+                <h1 class="govuk-panel__title">
+                  SOC submitted
+                </h1>
+                <div class="govuk-panel__body">
+                  The report for <strong>Q2 2019</strong> at <strong>Manchester Magistrates Court</strong> has been submitted.
+                </div>
+              </div>
+
+              <div class="govuk-!-padding-bottom-4"></div>
+
+              <h2 class="govuk-heading-m">What happens next</h2>
+              <p class="govuk-body">
+                Your Cluster Manager will see any issues that you have escalated and may be in touch to request more details.
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+
+
+  <a class="govuk-button hmcts-button--secondary" href="om_dashboard_updated" role="button" style="padding-bottom: 10px;" 15px>
+    Return to your dashboard
+  </a>
+
+  <!-- <button class="govuk-button hmcts-button--secondary" type="submit" formaction="om_dashboard_updated" href="om_dashboard_updated" tabindex="0" style="padding-bottom: 10px;margin-left: 15px" 15px>
+    Return to your dashboard
+  </button> -->
+
+
+</div>
+
+
+{% endblock %}
