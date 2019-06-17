@@ -173,26 +173,6 @@ div.clear-search {
   text-transform: capitalize;
 }
 
-.govuk-tag-do-last {
-  font-family: "nta", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 14px;
-  font-size: 1.2rem;
-  line-height: 1.25;
-  display: inline-block;
-  padding: 4px 8px;
-  padding-bottom: 1px;
-  outline: 3px solid #000000;
-  outline-offset: -1px;
-  color: #000000;
-  background-color: #ffffff;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: none;
-}
-
 .govuk-tag-started {
   font-family: "nta", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -204,10 +184,10 @@ div.clear-search {
   display: inline-block;
   padding: 4px 8px;
   padding-bottom: 1px;
-  outline: 3px solid #000000;
+  outline: 3px solid #0060A2;
   outline-offset: -1px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #0060A2;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: none;
@@ -252,3 +232,39 @@ div.clear-search {
   text-decoration: none;
   text-transform: none;
 }
+
+// homeoffice nav
+  // https://home-office-digital-patterns.herokuapp.com/components/navigation#
+  .navbar .navbar__list-items {
+    padding-left: 0;
+    background-color: white;
+    border-bottom: 6px solid #005ea5;
+    li {
+      display: inline-block;
+      margin-bottom: 0;
+      a {
+        @include govuk-font(19, $weight: regular);
+        // @extend .bold-small !optional;
+        color: #005ea5;
+        display: inline-block;
+        padding: 15px 10px 10px 10px;
+        margin-right: 15px;
+        margin-bottom: 0;
+        font-size: inherit;
+        text-decoration: none;
+        &:hover {
+          color: #2b8cc4;
+          border-bottom: 4px solid #005ea5 !important;
+        }
+        &:focus {
+          outline: 0;
+        }
+      }
+      &.active a,
+      &.active a:hover {
+        color:  #2b8cc4;
+        border-bottom: 4px solid #005ea5 !important;
+        // font-weight: bold;
+      }
+    }
+  }

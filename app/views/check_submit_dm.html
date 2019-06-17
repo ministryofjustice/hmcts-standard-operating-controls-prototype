@@ -45,6 +45,9 @@
           <li>
             <a href="#checks">Status of checks</a>
           </li>
+          <li>
+            <a href="#declaration">Declaration and submission</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -111,23 +114,93 @@
     <h2 class="govuk-heading-l"  style="padding-top: 80px;
     margin-top: -80px;">Reported issues</h2>
 
+    <table class="govuk-table">
+      <!-- <caption class="govuk-table__caption">Issues reported</caption> -->
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">Activity</th>
+          <th class="govuk-table__header" scope="col">Issue summary</th>
+          <th class="govuk-table__header" scope="col">Root cause</th>
+          <th class="govuk-table__header" scope="col">Explanation of root cause</th>
+          <th class="govuk-table__header" scope="col">Action summary</th>
+          <th class="govuk-table__header" scope="col">Escalation to manager</th>
+          <th class="govuk-table__header" scope="col"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a class="govuk-link" href="#">
+            Court Funds Office
+            <span class="govuk-visually-hidden"> activity</span></td>
+          <td class="govuk-table__cell">KC3 not being met</td>
+          <td class="govuk-table__cell">Capacity</td>
+          <td class="govuk-table__cell">Backlog of outstanding work</td>
+          <td class="govuk-table__cell">Prioritise this work to clear backlog</td>
+          <td class="govuk-table__cell">
+            {{ govukWarningText({
+            text: "Yes",
+            iconFallbackText: "Warning"
+            }) }}</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href=#>
+              Change
+              <span class="govuk-visually-hidden"> court code</span>
+            </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a class="govuk-link" href="#">
+            Business Continuity Plan
+            <span class="govuk-visually-hidden"> activity</span></td>
+          <td class="govuk-table__cell">KC4 not completed</td>
+          <td class="govuk-table__cell">Knowledge and capability</td>
+          <td class="govuk-table__cell">No walkthrough has been undertaken</td>
+          <td class="govuk-table__cell">Set up session to walkthrough with staff</td>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"><a class="govuk-link" href=#>
+            Change
+            <span class="govuk-visually-hidden"> court code</span>
+          </a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
+
 
   <a name="checks"></a>
   <h2 class="govuk-heading-l"  style="padding-top: 80px;
   margin-top: -80px;">
     Status of key control checks
   </h2>
+  <p>All checks complete</p>
 
 
 
-  
-  <h3 class="govuk-heading-l">Client declaration</h3>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <h3 class="govuk-heading-s">Client signature:</h3>
+
+  <a name="declaration"></a>
+  <h2 class="govuk-heading-l" style="padding-top: 80px;
+  margin-top: -80px;">
+    Declaration and submission
+  </h2>
+
+  <div class="govuk-form-group">
+    <div class="govuk-checkboxes">
+    <div class="govuk-checkboxes__item">
+      <input class="govuk-checkboxes__input" id="declaration-1" name="declaration" type="checkbox" value="yes">
+      <label class="govuk-label govuk-checkboxes__label" for="declaration-1">
+        <p class="govuk-body">By submitting this SOC report, I confirm that I have reviewed the information provided by my Delivery Manager(s) or Legal Team Manager(s). And that I have:</p>
+      <ul class="govuk-list govuk-list--bullet">
+      <li>escalated issues to the attention of HQ (if applicable)</li>
+      <li>added comments to reported issues (if applicable)</li>
+      </ul>
+      </label> </div>
+      <div class="govuk-!-padding-bottom-6"></div>
+    </div>
+
+    <button class="govuk-button" type="submit" formaction="final_confirmation_submitted">
+      Submit SOC to your manager
+    </button>
   <!-- <div class="govuk-grid-column-two-thirds" style="border:1px solid black"></div> -->
-  <h3 class="govuk-heading-s">Date:</h3>
 </div>
 <!-- <div class="govuk-grid-column-one-third">
  <aside class="app-related-items" role="complementary" style="position:sticky; top:0px">
