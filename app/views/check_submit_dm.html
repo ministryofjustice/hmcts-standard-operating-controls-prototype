@@ -22,7 +22,8 @@
 
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full-width ">
+  <div class="govuk-grid-column-full-width">
+    <form method="post" action="/dm_report_submitted">
     <h1 class="govuk-heading-l govuk-!-margin-bottom-4">
       Check your report before submitting to your manager
     </h1>
@@ -70,43 +71,57 @@
       </div>
     </div> -->
 
+
     <table class="govuk-table">
-      <caption class="govuk-table__caption">SOC activities you told us you are responsible for</caption>
+      <tr class="govuk-table__row">
+        <!-- <caption class="govuk-table__caption">Activities you told us you are responsible for checking</caption> -->
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">Activity</th>
+          <td class="govuk-table__cell govuk-body" scope="col"><div align="right">
+            <a class="govuk-link" href=soc_responsibilities>Change<span class="govuk-visually-hidden"> change SOC activities</span></a></div></th>
+        <!-- <td class="govuk-table__cell govuk-body" scope="row"><div align="right">
+          <a class="govuk-link" href=#>Change<span class="govuk-visually-hidden"> change SOC activities</span></a></div>
+        </td> -->
+        </tr>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
           <th class="govuk-table__cell govuk-body" scope="row">Anti Money Laundering</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          <td class="govuk-table__cell govuk-body" scope="row"></td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell govuk-body" scope="row">Business Continuity Plan</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          <td class="govuk-table__cell govuk-body" scope="row"></td>
         </tr>
         <tr class="govuk-table__row">
-          <th class="govuk-table__cell govuk-body" scope="row">Civil Bailiff enforcement & service</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          <th class="govuk-table__cell govuk-body" scope="row">Court Funds Office</th>
+          <td class="govuk-table__cell govuk-body" scope="row"></td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell govuk-body" scope="row">Effectively Managing Fraud</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          <td class="govuk-table__cell govuk-body" scope="row"></td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell govuk-body" scope="row">Interpreters ON contract</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          <td class="govuk-table__cell govuk-body" scope="row"></td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell govuk-body" scope="row">Interpreters OFF contract</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          <td class="govuk-table__cell govuk-body" scope="row"></td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell govuk-body" scope="row">Management of keys</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          <td class="govuk-table__cell govuk-body" scope="row"></td>
         </tr>
         <tr class="govuk-table__row">
           <th class="govuk-table__cell govuk-body" scope="row">TFM Contracts</th>
-          <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          <td class="govuk-table__cell govuk-body" scope="row"></td>
         </tr>
       </tbody>
     </table>
+
+    <div class="govuk-!-padding-bottom-6"></div>
+
 
   <table class="govuk-table" style="margin-bottom: 15px;">
 
@@ -141,7 +156,7 @@
             text: "Yes",
             iconFallbackText: "Warning"
             }) }}</td>
-            <td class="govuk-table__cell"><a class="govuk-link" href=#>
+            <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail>
               Change
               <span class="govuk-visually-hidden"> court code</span>
             </a></td>
@@ -155,7 +170,21 @@
           <td class="govuk-table__cell">No walkthrough has been undertaken</td>
           <td class="govuk-table__cell">Set up session to walkthrough with staff</td>
           <td class="govuk-table__cell"></td>
-          <td class="govuk-table__cell"><a class="govuk-link" href=#>
+          <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail>
+            Change
+            <span class="govuk-visually-hidden"> court code</span>
+          </a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell"><a class="govuk-link" href="#">
+            Interpreters ON Contract
+            <span class="govuk-visually-hidden"> activity</span></td>
+          <td class="govuk-table__cell">KC1 - interpreter was not booked on a private law case. Picked up the day before the hearing</td>
+          <td class="govuk-table__cell">Knowledge and capability</td>
+          <td class="govuk-table__cell">Human error</td>
+          <td class="govuk-table__cell">Assignment of booking interpreter task to be confirmed each week</td>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail>
             Change
             <span class="govuk-visually-hidden"> court code</span>
           </a></td>
@@ -174,7 +203,7 @@
   </h2>
   <p>All checks complete</p>
 
-
+  <div class="govuk-!-padding-bottom-6"></div>
 
 
   <a name="declaration"></a>
@@ -188,16 +217,16 @@
     <div class="govuk-checkboxes__item">
       <input class="govuk-checkboxes__input" id="declaration-1" name="declaration" type="checkbox" value="yes">
       <label class="govuk-label govuk-checkboxes__label" for="declaration-1">
-        <p class="govuk-body">By submitting this SOC report, I confirm that I have reviewed the information provided by my Delivery Manager(s) or Legal Team Manager(s). And that I have:</p>
+        <p class="govuk-body">By submitting this SOC report, I confirm that I understand my role and responsiblity within the HMCTS Risk and Assurance Framework and I am aware of the Anti Fraud and Corruption Policy. And that I:</p>
       <ul class="govuk-list govuk-list--bullet">
-      <li>escalated issues to the attention of HQ (if applicable)</li>
-      <li>added comments to reported issues (if applicable)</li>
+      <li>identify, assess and manage risks/issues within my remit</li>
+      <li>escalate risks/issues outside my remit to the Operations Manager/Deputy Clerk (Legal)</li>
       </ul>
       </label> </div>
       <div class="govuk-!-padding-bottom-6"></div>
     </div>
 
-    <button class="govuk-button" type="submit" formaction="final_confirmation_submitted">
+    <button class="govuk-button" type="submit" formaction="dm_report_submitted">
       Submit SOC to your manager
     </button>
   <!-- <div class="govuk-grid-column-two-thirds" style="border:1px solid black"></div> -->
