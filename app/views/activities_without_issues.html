@@ -1,0 +1,65 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "task_list"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Check that you have reported everything you need to
+      </h1>
+
+      <p>You have not reported any issues against the following activities that you are responsible for checking:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Anti Money Laundering</li>
+        <li>Effectively Managing Fraud</li>
+        <li>Interpreters OFF contract</li>
+        <li>Management of keys</li>
+        <li>TFM Contracts</li>
+      </ul>
+
+      <p>If you have missed something, go back to the Task List.</p>
+
+
+<div class="block-space">
+  <a class="govuk-button" href="check_submit_dm" role="button">
+    Continue
+  </a>
+</div>
+</div>
+
+<div class="govuk-grid-column-one-third">
+ <aside class="app-related-items" role="complementary">
+           <nav role="navigation" aria-labelledby="subsection-title">
+             <ul class="govuk-list govuk-!-font-size-16">
+               <li>
+                 <span class="govuk-caption-m">Q3 2019</span>
+               </li>
+               <li>
+                 <h2 class="govuk-heading-s">Manchester - Crown Square</h2>
+               </li>
+             </ul>
+           </nav>
+         </aside>
+       </div>
+       </div>
+{% endblock %}
