@@ -20,7 +20,7 @@
 {% endblock %}
 
 {% block content %}
-<form method="post" action="om_review_issues_reported">
+<form method="post" action="om_review_issues_reported_w_escalation">
   <div class="govuk-grid-row">
 
     <div class="govuk-grid-column-full-width">
@@ -38,13 +38,15 @@
         <!-- <caption class="govuk-table__caption">Issues reported</caption> -->
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th class="govuk-table__header" scope="col">Activity</th>
-            <th class="govuk-table__header" scope="col">Issue summary</th>
-            <th class="govuk-table__header" scope="col">Root cause</th>
-            <th class="govuk-table__header" scope="col">Explanation of root cause</th>
-            <th class="govuk-table__header" scope="col">Action summary</th>
-            <th class="govuk-table__header" scope="col">Reported by</th>
-            <th class="govuk-table__header" scope="col">Esacalating to HQ</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Activity</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Summary</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Cause</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Explanation of cause</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Action</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Reported by</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Your action required</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Concern level</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Escalate</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
@@ -56,6 +58,8 @@
             <td class="govuk-table__cell">Human error</td>
             <td class="govuk-table__cell">Assignment of booking interpreter task to be confirmed each week</td>
             <td class="govuk-table__cell">Joe Bloggs</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Slightly concerned</td>
             <td class="govuk-table__cell">
               {{ govukWarningText({
               text: "Yes",
@@ -74,7 +78,7 @@
       <div class="govuk-form-group">
         <h2 class="govuk-heading-m">Enter your comment</h2>
       <span id="issue-summary-hint" class="govuk-hint">
-        Provide any new information that is relevant or tell us about a correction you would like to make to what has already been reported.
+        Include any new information or make a correction to what has already been reported.
       </span>
       <textarea class="govuk-textarea" id="om-comment" name="om-comment" rows="5" aria-describedby="om-comment-hint"></textarea>
     </div>

@@ -35,11 +35,11 @@
 
       <nav id="nav" style="position:sticky; top:0px">
       <div class="navbar">
-      <button class="govuk-button hmcts-button--secondary" type="submit" formaction="om_review_issues_reported_w_escalation" tabindex="0">
+      <button class="govuk-button hmcts-button--secondary" type="submit" formaction="#" tabindex="0">
         Escalate issue to Cluster Manager
       </button>
 
-      <button class="govuk-button hmcts-button--secondary" type="submit" formaction="#" tabindex="0" style="padding-bottom: 10px;margin-left: 15px" 15px>
+      <button class="govuk-button hmcts-button--secondary" type="submit" formaction="om_review_issues_reported" tabindex="0" style="padding-bottom: 10px;margin-left: 15px" 15px>
         De-escalate issue
       </button>
 
@@ -53,15 +53,15 @@
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
             <th class="govuk-table__header app-custom-class" scope="col"></th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Activity</th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Summary</th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Cause</th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Explanation of cause</th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Action</th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Reported by</th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Your action required</th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Concern level</th>
-            <th class="govuk-table__header" scope="col" style="vertical-align:top">Escalate</th>
+            <th class="govuk-table__header" scope="col">Activity</th>
+            <th class="govuk-table__header" scope="col">Issue summary</th>
+            <th class="govuk-table__header" scope="col">Root cause</th>
+            <th class="govuk-table__header" scope="col">Explanation of root cause</th>
+            <th class="govuk-table__header" scope="col">Action summary</th>
+            <th class="govuk-table__header" scope="col">Reported by</th>
+            <th class="govuk-table__header" scope="col">Your action required</th>
+            <th class="govuk-table__header" scope="col">Concern level</th>
+            <th class="govuk-table__header" scope="col">Escalate to Cluster Manager</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
@@ -84,7 +84,10 @@
             <td class="govuk-table__cell">Yes</td>
             <td class="govuk-table__cell">Slightly concerned</td>
             <td class="govuk-table__cell">
-              </td>
+              {{ govukWarningText({
+              text: "Yes",
+              iconFallbackText: "Warning"
+              }) }}</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
@@ -125,7 +128,10 @@
             <td class="govuk-table__cell">Yes</td>
             <td class="govuk-table__cell">Very concerned</td>
             <td class="govuk-table__cell">
-              </td>
+              {{ govukWarningText({
+              text: "Yes",
+              iconFallbackText: "Warning"
+              }) }}</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
@@ -141,7 +147,7 @@
             <td class="govuk-table__cell">One instance of KC4 where a payee name was incorrectly entered. This was picked up and amended prior to payout.</td>
             <td class="govuk-table__cell">Knowledge and capability</td>
             <td class="govuk-table__cell">Human error</td>
-            <td class="govuk-table__cell">Staff has been reminded of the correct process and controls</td>
+            <td class="govuk-table__cell" style="vertical-align: text-bottom">Staff has been reminded of the correct process and controls</td>
             <td class="govuk-table__cell">Fred Smith</td>
             <td class="govuk-table__cell">No</td>
             <td class="govuk-table__cell">Not concerned</td>
@@ -186,7 +192,10 @@
             <td class="govuk-table__cell">Yes</td>
             <td class="govuk-table__cell">Slightly concerned</td>
             <td class="govuk-table__cell">
-              </td>
+              {{ govukWarningText({
+              text: "Yes",
+              iconFallbackText: "Warning"
+              }) }}</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">
