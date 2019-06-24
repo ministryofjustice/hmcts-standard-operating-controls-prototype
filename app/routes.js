@@ -111,7 +111,7 @@ router.post('/checks_status_answer', function (req, res) {
   var checksStatus = req.session.data['checks_status']
 
   // Check whether the variable matches a condition
-  if (checksStatus == "yes"){
+  if (checksStatus == "no"){
     // Send user to next page
     res.redirect('/task_list')
   }
