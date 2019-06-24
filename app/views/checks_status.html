@@ -29,22 +29,22 @@
   <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-        Did anything stop you from doing all key control checks for an activity?
+        Were you able to complete all of your key control checks?
       </h1>
     </legend>
     <span id="changed-name-hint" class="govuk-hint">
       Select one option.
     </span>
-    <div class="govuk-radios govuk-radios">
+    <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="checks_status" name="checks_status" type="radio" value="yes" {{checked("checks_status", "yes")}}>
         <label class="govuk-label govuk-radios__label" for="checks_status-1">
-          Yes -  I could not complete my checks
+          Yes
         </label></div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="checks_status" name="checks_status" type="radio" value="no" {{checked("checks_status", "no")}}>
         <label class="govuk-label govuk-radios__label" for="checks_status-2">
-          No - I completed all of my checks
+          No
         </label> </div>
     </div>
   </fieldset>
