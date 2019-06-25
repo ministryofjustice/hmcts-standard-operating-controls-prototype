@@ -133,13 +133,13 @@
       <!-- <caption class="govuk-table__caption">Issues reported</caption> -->
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
-          <th class="govuk-table__header" scope="col">Activity</th>
-          <th class="govuk-table__header" scope="col">Issue summary</th>
-          <th class="govuk-table__header" scope="col">Root cause</th>
-          <th class="govuk-table__header" scope="col">Explanation of root cause</th>
-          <th class="govuk-table__header" scope="col">Action summary</th>
-          <th class="govuk-table__header" scope="col">Escalation to manager</th>
-          <th class="govuk-table__header" scope="col"></th>
+          <th class="govuk-table__header" scope="col" style="vertical-align:top">Activity</th>
+          <th class="govuk-table__header" scope="col" style="vertical-align:top">Issue summary</th>
+          <th class="govuk-table__header" scope="col" style="vertical-align:top">Cause</th>
+          <th class="govuk-table__header" scope="col" style="vertical-align:top">Cause detail</th>
+          <th class="govuk-table__header" scope="col" style="vertical-align:top">Action</th>
+          <th class="govuk-table__header" scope="col" style="vertical-align:top">Concern level</th>
+          <th class="govuk-table__header" scope="col" style="vertical-align:top"></th>
         </tr>
       </thead>
       <tbody class="govuk-table__body">
@@ -152,11 +152,8 @@
           <td class="govuk-table__cell">Backlog of outstanding work</td>
           <td class="govuk-table__cell">Prioritise this work to clear backlog</td>
           <td class="govuk-table__cell">
-            {{ govukWarningText({
-            text: "Yes",
-            iconFallbackText: "Warning"
-            }) }}</td>
-            <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail>
+          Very concerned</td>
+            <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail_content>
               Change
               <span class="govuk-visually-hidden"> court code</span>
             </a></td>
@@ -169,8 +166,8 @@
           <td class="govuk-table__cell">Knowledge and capability</td>
           <td class="govuk-table__cell">No walkthrough has been undertaken</td>
           <td class="govuk-table__cell">Set up session to walkthrough with staff</td>
-          <td class="govuk-table__cell"></td>
-          <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail>
+          <td class="govuk-table__cell">Slightly concerned</td>
+          <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail_content>
             Change
             <span class="govuk-visually-hidden"> court code</span>
           </a></td>
@@ -183,8 +180,8 @@
           <td class="govuk-table__cell">Knowledge and capability</td>
           <td class="govuk-table__cell">Human error</td>
           <td class="govuk-table__cell">Assignment of booking interpreter task to be confirmed each week</td>
-          <td class="govuk-table__cell"></td>
-          <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail>
+          <td class="govuk-table__cell">Not concerned</td>
+          <td class="govuk-table__cell"><a class="govuk-link" href=report_issue_detail_content>
             Change
             <span class="govuk-visually-hidden"> court code</span>
           </a></td>
