@@ -1,0 +1,190 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+
+  {{ govukBackLink({
+    text: "Back",
+      href: "om_past_report"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<form method="post" action="om_review">
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full-width">
+      <h1 class="govuk-heading-l" style="margin-bottom: 20px;">
+        Reported issues
+      </h1>
+
+      <span class="govuk-caption-l">Q2 2019</span>
+      <span class="govuk-caption-l">Manchester Magistrates</span>
+
+      <div class="govuk-!-padding-bottom-6"></div>
+
+      <table class="govuk-table">
+        <!-- <caption class="govuk-table__caption">Issues reported</caption> -->
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Activity</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Summary</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Cause</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Cause detail</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Action</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Reported by</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Concern level</th>
+            <th class="govuk-table__header" scope="col" style="vertical-align:top">Escalate</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="#">
+              Court Funds Office
+              <span class="govuk-visually-hidden"> activity</span></td>
+            <td class="govuk-table__cell">KC3 not being met</td>
+            <td class="govuk-table__cell">Capacity</td>
+            <td class="govuk-table__cell">Backlog of outstanding work</td>
+            <td class="govuk-table__cell">Prioritise this work to clear backlog</td>
+            <td class="govuk-table__cell">Sarah Doe</td>
+            <td class="govuk-table__cell">Slightly concerned</td>
+            <td class="govuk-table__cell">
+              {{ govukWarningText({
+              text: "Yes",
+              iconFallbackText: "Warning"
+              }) }}</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="#">
+              Business Continuity Plan
+              <span class="govuk-visually-hidden"> activity</span></td>
+            <td class="govuk-table__cell">KC4 not completed</td>
+            <td class="govuk-table__cell">Knowledge and capability</td>
+            <td class="govuk-table__cell">No walkthrough has been undertaken</td>
+            <td class="govuk-table__cell">Set up session to walkthrough with staff</td>
+            <td class="govuk-table__cell">Sarah Doe</td>
+            <td class="govuk-table__cell">Not concerned</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="#">
+              Effectively Managing Fraud
+              <span class="govuk-visually-hidden"> activity</span></td>
+            <td class="govuk-table__cell">KC1 checks not being undertaken</td>
+            <td class="govuk-table__cell">Capacity</td>
+            <td class="govuk-table__cell">New delivery manager is being onboarded</td>
+            <td class="govuk-table__cell">Train new DM</td>
+            <td class="govuk-table__cell">Sarah Doe</td>
+            <td class="govuk-table__cell">Very concerned</td>
+            <td class="govuk-table__cell">
+              {{ govukWarningText({
+              text: "Yes",
+              iconFallbackText: "Warning"
+              }) }}</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="#">
+              Suitors Cash
+              <span class="govuk-visually-hidden"> activity</span></td>
+            <td class="govuk-table__cell">One instance of KC4 where a payee name was incorrectly entered. This was picked up and amended prior to payout.</td>
+            <td class="govuk-table__cell">Knowledge and capability</td>
+            <td class="govuk-table__cell">Human error</td>
+            <td class="govuk-table__cell" style="vertical-align: text-bottom">Staff has been reminded of the correct process and controls</td>
+            <td class="govuk-table__cell">Fred Smith</td>
+            <td class="govuk-table__cell">Not concerned</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="#">
+              Forced Marriage and FGM Protection Orders
+              <span class="govuk-visually-hidden"> activity</span></td>
+            <td class="govuk-table__cell">Checks were not done, but were picked up on before anything was sent out.</td>
+            <td class="govuk-table__cell">Knowledge and capability</td>
+            <td class="govuk-table__cell">New team leader on Family was not aware of the key control</td>
+            <td class="govuk-table__cell">Train new team leader on controls</td>
+            <td class="govuk-table__cell">Fred Smith</td>
+            <td class="govuk-table__cell">Not concerned</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="#">
+              Interpreters ON contract
+              <span class="govuk-visually-hidden"> activity</span></td>
+            <td class="govuk-table__cell">KC1 - interpreter was not booked on a private law case. Picked up the day before the hearing.<br><strong style="color:red;">Manager comment:</strong> {{ data['om-comment'] }}</td>
+            <td class="govuk-table__cell">Knowledge and capability</td>
+            <td class="govuk-table__cell">Human error</td>
+            <td class="govuk-table__cell">Assignment of booking interpreter task to be confirmed each week</td>
+            <td class="govuk-table__cell">Joe Bloggs</td>
+            <td class="govuk-table__cell">Slightly concerned</td>
+            <td class="govuk-table__cell">
+              {{ govukWarningText({
+              text: "Yes",
+              iconFallbackText: "Warning"
+              }) }}</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="#">
+              Management of keys
+              <span class="govuk-visually-hidden"> activity</span></td>
+            <td class="govuk-table__cell">KC1 & 4 review of key logs progressed with critical key checks, shared responsibility with Crown Court as part of security risk assessment plan ongoing</td>
+            <td class="govuk-table__cell">Capacity</td>
+            <td class="govuk-table__cell">Action to address is ongoing but dependent on capacity at Crown Court</td>
+            <td class="govuk-table__cell">Set aside time with the crown court to sort keys</td>
+            <td class="govuk-table__cell">Sarah Doe</td>
+            <td class="govuk-table__cell">Not concerned</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="#">
+              Information Security
+              <span class="govuk-visually-hidden"> activity</span></td>
+            <td class="govuk-table__cell">KC5 documents left on printers. KC6 divorce file destruction not yet up to date. Currently on 1999 files, should be working on 2001 this year.</td>
+            <td class="govuk-table__cell">Knowledge and capability</td>
+            <td class="govuk-table__cell">Human error for KC5. Need time to catch up on file destruction for KC6</td>
+            <td class="govuk-table__cell">Ask OM to protect time to sort in next month</td>
+            <td class="govuk-table__cell">Joe Bloggs</td>
+            <td class="govuk-table__cell">Slightly concerned</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="govuk-!-padding-bottom-6"></div>
+
+
+      <!-- <button class="govuk-button" type="submit">
+        Save and return to SOC review page
+      </button> -->
+
+</div>
+
+</div>
+</div>
+</div>
+</form>
+
+<!-- <div class="govuk-grid-column-one-third">
+ <aside class="app-related-items" role="complementary">
+           <nav role="navigation" aria-labelledby="subsection-title">
+             <ul class="govuk-list govuk-!-font-size-16">
+               <li>
+                 <span class="govuk-caption-m">Q3 2019</span>
+               </li>
+               <li>
+                 <h2 class="govuk-heading-s">Manchester - Crown Square</h2>
+               </li>
+             </ul>
+           </nav>
+         </aside>
+       </div> -->
+{% endblock %}
