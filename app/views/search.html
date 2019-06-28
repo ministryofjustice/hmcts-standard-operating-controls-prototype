@@ -24,7 +24,8 @@ $('#search').hideseek({
     highlight: true,
     min_chars: 3,
     nodata: "No results found.",
-    hidden_mode: true
+    hidden_mode: true,
+    ignore: '.ignore'
 });
 </script>
 {% endblock %}
@@ -52,7 +53,7 @@ $('#search').hideseek({
 
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-two-thirds">
-              <input class="govuk-input" id="search" name="search" type="text" data-list="#proceedings-list" value="Search">
+              <input class="govuk-input" id="search" name="search" type="text" data-list="#proceedings-list" placeholder="Search" value="">
             </div>
           </div>
 
@@ -60,7 +61,7 @@ $('#search').hideseek({
             <div id="proceedings-list" class="govuk-grid-column-full ">
 
             {% for proceeding in proceedings -%}
-            <div class="govuk-grid-row proceeding-list" id="offence-item-{{loop.index}}" >
+            <div class="govuk-grid-row proceeding-list" id="offence-item-{{loop.index}}" data-loopindex="{{loop.index}}">
 
                 <div class="govuk-grid-column-two-thirds">
 
@@ -71,7 +72,7 @@ $('#search').hideseek({
                     </ul>
                 </div>
 
-                <div class="govuk-grid-column-one-third" style="text-align:right; padding-top: 25px;">
+                <div class="govuk-grid-column-one-third ignore" style="text-align:right; padding-top: 25px;">
                     <a id="offence-item-button-{{loop.index}}" class="govuk-button" role="button" href="search_select">
                         Select
                     </a>
